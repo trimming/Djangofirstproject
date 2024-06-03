@@ -1,0 +1,8 @@
+INFO 2024-06-03 20:24:10,796 autoreload 15260 2016 Watching for file changes with StatReloader
+INFO 2024-06-03 20:26:58,303 autoreload 15260 2016 D:\GB\Django\Djangofirstproject\myfirstproject\myapp\views.py changed, reloading.
+INFO 2024-06-03 20:26:58,614 autoreload 18068 17436 Watching for file changes with StatReloader
+INFO 2024-06-03 20:27:18,485 basehttp 18068 3944 "GET / HTTP/1.1" 200 13
+INFO 2024-06-03 20:27:26,489 basehttp 18068 3944 "GET /random_roll HTTP/1.1" 200 25
+INFO 2024-06-03 20:27:41,053 basehttp 18068 3944 "GET /random_number HTTP/1.1" 200 50
+WARNING 2024-06-03 20:29:30,716 log 18068 3944 Not Found: /random_
+WARNING 2024-06-03 20:29:30,717 basehttp 18068 3944 "GET /random_ HTTP/1.1" 404 2791

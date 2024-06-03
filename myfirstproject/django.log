@@ -1,0 +1,6 @@
+INFO 2024-06-03 20:10:45,677 autoreload 12116 13984 Watching for file changes with StatReloader
+INFO 2024-06-03 20:11:47,786 autoreload 12116 13984 D:\GB\Django\Djangofirstproject\myfirstproject\myapp\views.py changed, reloading.
+INFO 2024-06-03 20:11:48,137 autoreload 18448 14616 Watching for file changes with StatReloader
+INFO 2024-06-03 20:21:31,646 autoreload 18448 14616 D:\GB\Django\Djangofirstproject\myfirstproject\myapp\views.py changed, reloading.
+INFO 2024-06-03 20:21:31,979 autoreload 20372 10516 Watching for file changes with StatReloader
+INFO 2024-06-03 20:24:10,496 autoreload 20372 10516 D:\GB\Django\Djangofirstproject\myfirstproject\myfirstproject\settings.py changed, reloading.
