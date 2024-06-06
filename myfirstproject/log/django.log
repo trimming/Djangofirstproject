@@ -6,3 +6,110 @@ INFO 2024-06-03 20:27:26,489 basehttp 18068 3944 "GET /random_roll HTTP/1.1" 200
 INFO 2024-06-03 20:27:41,053 basehttp 18068 3944 "GET /random_number HTTP/1.1" 200 50
 WARNING 2024-06-03 20:29:30,716 log 18068 3944 Not Found: /random_
 WARNING 2024-06-03 20:29:30,717 basehttp 18068 3944 "GET /random_ HTTP/1.1" 404 2791
+INFO 2024-06-06 21:01:31,990 autoreload 22112 6612 Watching for file changes with StatReloader
+INFO 2024-06-06 21:01:34,509 basehttp 22112 17848 "GET / HTTP/1.1" 200 13
+INFO 2024-06-06 21:03:06,287 autoreload 22112 6612 D:\GB\Django\Djangofirstproject\myfirstproject\myfirstproject\urls.py changed, reloading.
+INFO 2024-06-06 21:03:06,776 autoreload 20840 8032 Watching for file changes with StatReloader
+INFO 2024-06-06 21:07:00,140 basehttp 20840 8696 "GET / HTTP/1.1" 200 13
+INFO 2024-06-06 21:07:21,776 basehttp 20840 8696 "GET /task2 HTTP/1.1" 301 0
+ERROR 2024-06-06 21:07:21,838 log 20840 21568 Internal Server Error: /task2/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\myfirstproject\myapp2\views.py", line 9, in coin_flip
+    return render(request, 'index.html', {'flip: flip'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\backends\django.py", line 57, in render
+    context = make_context(
+              ^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than set.
+ERROR 2024-06-06 21:07:21,840 basehttp 20840 21568 "GET /task2/ HTTP/1.1" 500 82172
+INFO 2024-06-06 21:08:17,547 autoreload 20840 8032 D:\GB\Django\Djangofirstproject\myfirstproject\myapp2\views.py changed, reloading.
+INFO 2024-06-06 21:08:18,006 autoreload 18608 22748 Watching for file changes with StatReloader
+ERROR 2024-06-06 21:08:21,106 log 18608 18604 Internal Server Error: /task2/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\myfirstproject\myapp2\views.py", line 9, in coin_flip
+    return render(request, 'templates/index.html', {'flip: flip'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: templates/index.html
+ERROR 2024-06-06 21:08:21,106 basehttp 18608 18604 "GET /task2/ HTTP/1.1" 500 80611
+INFO 2024-06-06 21:13:07,699 autoreload 18608 22748 D:\GB\Django\Djangofirstproject\myfirstproject\myapp2\views.py changed, reloading.
+INFO 2024-06-06 21:13:08,187 autoreload 10964 3404 Watching for file changes with StatReloader
+ERROR 2024-06-06 21:13:12,246 log 10964 23504 Internal Server Error: /task2/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\myfirstproject\myapp2\views.py", line 9, in coin_flip
+    return render(request, '.templates/index.html', {'flip: flip'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: .templates/index.html
+ERROR 2024-06-06 21:13:12,246 basehttp 10964 23504 "GET /task2/ HTTP/1.1" 500 80629
+INFO 2024-06-06 21:14:45,526 autoreload 10964 3404 D:\GB\Django\Djangofirstproject\myfirstproject\myapp2\views.py changed, reloading.
+INFO 2024-06-06 21:14:46,036 autoreload 240 19624 Watching for file changes with StatReloader
+INFO 2024-06-06 21:15:07,451 autoreload 240 19624 D:\GB\Django\Djangofirstproject\myfirstproject\myapp2\views.py changed, reloading.
+INFO 2024-06-06 21:15:07,835 autoreload 17432 18800 Watching for file changes with StatReloader
+ERROR 2024-06-06 21:15:13,476 log 17432 18436 Internal Server Error: /task2/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\myfirstproject\myapp2\views.py", line 11, in coin_flip
+    return render(request, '.templates/index.html', {'flip': flip})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: .templates/index.html
+ERROR 2024-06-06 21:15:13,476 basehttp 17432 18436 "GET /task2/ HTTP/1.1" 500 80649
+INFO 2024-06-06 21:15:23,241 autoreload 17432 18800 D:\GB\Django\Djangofirstproject\myfirstproject\myapp2\views.py changed, reloading.
+INFO 2024-06-06 21:15:23,655 autoreload 10112 20580 Watching for file changes with StatReloader
+INFO 2024-06-06 21:15:29,179 basehttp 10112 2824 "GET /task2/ HTTP/1.1" 200 245
+INFO 2024-06-06 22:00:36,585 autoreload 23388 21360 Watching for file changes with StatReloader
+INFO 2024-06-06 22:02:19,453 basehttp 23388 22432 "GET / HTTP/1.1" 200 13
+INFO 2024-06-06 22:02:24,335 basehttp 23388 22432 "GET /task2/ HTTP/1.1" 200 245
