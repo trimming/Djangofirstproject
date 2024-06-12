@@ -5,3 +5,6 @@ INFO 2024-06-03 22:44:10,034 basehttp 19356 3540 "GET / HTTP/1.1" 200 1604
 WARNING 2024-06-03 22:44:18,447 log 19356 3540 Not Found: /random_roll
 WARNING 2024-06-03 22:44:18,448 basehttp 19356 3540 "GET /random_roll HTTP/1.1" 404 2439
 INFO 2024-06-03 22:44:29,663 basehttp 19356 3540 "GET /about/ HTTP/1.1" 200 851
+INFO 2024-06-11 21:14:12,786 autoreload 21064 2512 Watching for file changes with StatReloader
+INFO 2024-06-11 21:14:17,786 basehttp 21064 19460 "GET / HTTP/1.1" 200 1604
+INFO 2024-06-11 21:25:11,338 autoreload 14032 2724 Watching for file changes with StatReloader
