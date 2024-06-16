@@ -8,11 +8,11 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
 
         client = Client(
-            name='Alex',
-            email='alex@example.ru',
-            phone_number=88009009001,
-            address='Moscow, Arbat street, 56',
-            login_date='2023-12-23'
+            name='Maksim',
+            email='maksim@example.ru',
+            phone_number=78009009001,
+            address='Anapa, Lenina street, 6',
+            login_date='2023-06-20'
         )
         client.save()
         self.stdout.write(f'Клиент {client.name} зарегистрирован.')

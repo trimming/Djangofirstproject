@@ -6,11 +6,14 @@ class Command(BaseCommand):
     help = 'Create order'
 
     def handle(self, *args, **options):
+        prod_id = Product.objects.get(pk=3)
         order = Order(
-            client=Client.objects.get(pk=1),
-            product=Product.objects.set(name__iexact='ball'),
-            total_price=150,
-            order_date='2023-12-25'
+            client=Client.objects.get(pk=2),
+            total_price=prod_id.price * prod_id.quantity,
+            order_date='2024-06-15'
         )
+
         order.save()
+        order.product.set([prod_id])
+
         self.stdout.write(f'Заказ №{order.id} создан.')
