@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>{% block title %} {{ title }} {% endblock %}</title>
+    </head>
+
+    <body>
+            {% block content %}
+            <h1>Мой первый сайт Django.</h1>
+            <p>Django - это высокоуровневый фреймворк для веб-приложений на языке Python. Он был создан в 2005 году и с
+                тех пор активно развивается и обновляется сообществом разработчиков по всему миру.</p>
+            <h2>Обзор фреймворка Django.</h2>
+            <p>Django предоставляет разработчикам множество инструментов и функций для создания веб-приложений, таких как:</p>
+            <ul>
+                <li>ORM (Object-Relational Mapping) для работы с базами данных</li>
+                <li>URL-маршрутизация</li>
+                <li>Аутентификация и авторизация пользователей</li>
+                <li>Шаблонизация</li>
+                <li>Кеширование</li>
+                <li>Интернационализация</li>
+                <li>Административная панель</li>
+            </ul>
+            {% endblock %}
+    </body>
+
+    </html>

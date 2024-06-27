@@ -113,3 +113,62 @@ INFO 2024-06-06 21:15:29,179 basehttp 10112 2824 "GET /task2/ HTTP/1.1" 200 245
 INFO 2024-06-06 22:00:36,585 autoreload 23388 21360 Watching for file changes with StatReloader
 INFO 2024-06-06 22:02:19,453 basehttp 23388 22432 "GET / HTTP/1.1" 200 13
 INFO 2024-06-06 22:02:24,335 basehttp 23388 22432 "GET /task2/ HTTP/1.1" 200 245
+INFO 2024-06-27 23:10:17,090 autoreload 26164 25876 Watching for file changes with StatReloader
+INFO 2024-06-27 23:11:52,967 autoreload 16940 10564 Watching for file changes with StatReloader
+INFO 2024-06-27 23:15:40,978 autoreload 23864 21744 Watching for file changes with StatReloader
+INFO 2024-06-27 23:27:06,093 autoreload 23144 17352 Watching for file changes with StatReloader
+INFO 2024-06-27 23:30:32,995 autoreload 16940 14636 Watching for file changes with StatReloader
+INFO 2024-06-27 23:30:35,729 basehttp 16940 18232 "GET / HTTP/1.1" 200 13
+WARNING 2024-06-27 23:30:35,856 log 16940 18232 Not Found: /favicon.ico
+WARNING 2024-06-27 23:30:35,856 basehttp 16940 18232 "GET /favicon.ico HTTP/1.1" 404 3236
+INFO 2024-06-27 23:30:45,998 basehttp 16940 18232 "GET /about HTTP/1.1" 301 0
+ERROR 2024-06-27 23:30:46,086 log 16940 26612 Internal Server Error: /about/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\myfirstproject\myapp3\views.py", line 19, in get_info_about
+    return render(request, 'myapp3/about.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/about.html
+ERROR 2024-06-27 23:30:46,088 basehttp 16940 26612 "GET /about/ HTTP/1.1" 500 81275
+INFO 2024-06-27 23:32:36,924 autoreload 26032 16864 Watching for file changes with StatReloader
+INFO 2024-06-27 23:32:38,753 basehttp 26032 23996 "GET / HTTP/1.1" 200 13
+INFO 2024-06-27 23:32:48,586 basehttp 26032 23996 "GET / HTTP/1.1" 200 13
+ERROR 2024-06-27 23:32:56,923 log 26032 23996 Internal Server Error: /app3/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\myfirstproject\myapp3\views.py", line 12, in home
+    return render(request, 'myapp3/index.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/index.html
+ERROR 2024-06-27 23:32:56,933 basehttp 26032 23996 "GET /app3/ HTTP/1.1" 500 82093
+INFO 2024-06-27 23:35:19,279 autoreload 16520 26252 Watching for file changes with StatReloader
+INFO 2024-06-27 23:35:22,132 basehttp 16520 21556 "GET / HTTP/1.1" 200 13
+INFO 2024-06-27 23:35:33,985 basehttp 16520 21556 "GET /app3/ HTTP/1.1" 200 1600
+INFO 2024-06-27 23:35:46,058 basehttp 16520 21556 "GET /app3/about HTTP/1.1" 301 0
+INFO 2024-06-27 23:35:46,064 basehttp 16520 21436 "GET /app3/about/ HTTP/1.1" 200 812
