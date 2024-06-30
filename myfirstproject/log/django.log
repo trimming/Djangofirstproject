@@ -172,3 +172,130 @@ INFO 2024-06-27 23:35:22,132 basehttp 16520 21556 "GET / HTTP/1.1" 200 13
 INFO 2024-06-27 23:35:33,985 basehttp 16520 21556 "GET /app3/ HTTP/1.1" 200 1600
 INFO 2024-06-27 23:35:46,058 basehttp 16520 21556 "GET /app3/about HTTP/1.1" 301 0
 INFO 2024-06-27 23:35:46,064 basehttp 16520 21436 "GET /app3/about/ HTTP/1.1" 200 812
+INFO 2024-06-30 16:14:25,982 autoreload 20952 19168 Watching for file changes with StatReloader
+INFO 2024-06-30 16:14:30,280 basehttp 20952 468 "GET / HTTP/1.1" 200 13
+INFO 2024-06-30 16:14:42,698 basehttp 20952 468 "GET /app3/about/ HTTP/1.1" 200 812
+INFO 2024-06-30 16:14:45,483 basehttp 20952 468 "GET /app3/about/ HTTP/1.1" 200 812
+INFO 2024-06-30 16:14:46,309 basehttp 20952 468 "GET /app3/about/ HTTP/1.1" 200 812
+INFO 2024-06-30 16:15:00,832 basehttp 20952 468 "GET /app3/about/ HTTP/1.1" 200 812
+INFO 2024-06-30 16:15:12,525 basehttp 20952 468 "GET /app3/ HTTP/1.1" 200 1420
+INFO 2024-06-30 16:29:42,330 autoreload 20952 19168 D:\GB\Django\Djangofirstproject\myfirstproject\myapp3\urls.py changed, reloading.
+INFO 2024-06-30 16:29:42,850 autoreload 12836 14788 Watching for file changes with StatReloader
+INFO 2024-06-30 16:32:37,210 autoreload 12836 14788 D:\GB\Django\Djangofirstproject\myfirstproject\myapp3\views.py changed, reloading.
+INFO 2024-06-30 16:32:37,641 autoreload 7608 25224 Watching for file changes with StatReloader
+INFO 2024-06-30 16:35:49,609 autoreload 7608 25224 D:\GB\Django\Djangofirstproject\myfirstproject\myapp3\views.py changed, reloading.
+INFO 2024-06-30 16:35:50,137 autoreload 23228 27316 Watching for file changes with StatReloader
+INFO 2024-06-30 16:39:35,385 autoreload 23228 27316 D:\GB\Django\Djangofirstproject\myfirstproject\myapp3\views.py changed, reloading.
+INFO 2024-06-30 16:39:35,841 autoreload 17372 22536 Watching for file changes with StatReloader
+INFO 2024-06-30 16:43:27,393 autoreload 17372 22536 D:\GB\Django\Djangofirstproject\myfirstproject\myapp3\views.py changed, reloading.
+INFO 2024-06-30 16:43:27,862 autoreload 20792 25116 Watching for file changes with StatReloader
+INFO 2024-06-30 16:43:43,322 autoreload 20792 25116 D:\GB\Django\Djangofirstproject\myfirstproject\myapp3\views.py changed, reloading.
+INFO 2024-06-30 16:43:43,750 autoreload 25088 21856 Watching for file changes with StatReloader
+INFO 2024-06-30 16:44:06,400 autoreload 25088 21856 D:\GB\Django\Djangofirstproject\myfirstproject\myapp3\views.py changed, reloading.
+INFO 2024-06-30 16:44:06,842 autoreload 26740 10020 Watching for file changes with StatReloader
+INFO 2024-06-30 16:44:57,347 autoreload 26740 10020 D:\GB\Django\Djangofirstproject\myfirstproject\myapp3\views.py changed, reloading.
+INFO 2024-06-30 16:44:57,823 autoreload 23672 20052 Watching for file changes with StatReloader
+INFO 2024-06-30 16:46:42,633 autoreload 23672 20052 D:\GB\Django\Djangofirstproject\myfirstproject\myapp3\views.py changed, reloading.
+INFO 2024-06-30 16:46:43,056 autoreload 24924 6540 Watching for file changes with StatReloader
+INFO 2024-06-30 16:51:29,034 autoreload 24924 6540 D:\GB\Django\Djangofirstproject\myfirstproject\myapp3\views.py changed, reloading.
+INFO 2024-06-30 16:51:29,451 autoreload 26032 24848 Watching for file changes with StatReloader
+INFO 2024-06-30 16:53:10,445 autoreload 26032 24848 D:\GB\Django\Djangofirstproject\myfirstproject\myapp3\views.py changed, reloading.
+INFO 2024-06-30 16:53:11,042 autoreload 25440 14952 Watching for file changes with StatReloader
+INFO 2024-06-30 16:54:41,761 autoreload 25440 14952 D:\GB\Django\Djangofirstproject\myfirstproject\myapp3\views.py changed, reloading.
+INFO 2024-06-30 16:54:42,145 autoreload 24136 27344 Watching for file changes with StatReloader
+INFO 2024-06-30 16:55:12,015 autoreload 24136 27344 D:\GB\Django\Djangofirstproject\myfirstproject\myapp3\views.py changed, reloading.
+INFO 2024-06-30 16:55:12,547 autoreload 19712 26592 Watching for file changes with StatReloader
+INFO 2024-06-30 17:02:23,686 autoreload 21688 5804 Watching for file changes with StatReloader
+INFO 2024-06-30 17:07:51,879 autoreload 13036 3344 Watching for file changes with StatReloader
+INFO 2024-06-30 17:07:56,904 basehttp 13036 23656 "GET /app3/game/3 HTTP/1.1" 200 510
+INFO 2024-06-30 17:08:06,953 basehttp 13036 23656 "GET /app3/game/7 HTTP/1.1" 200 736
+INFO 2024-06-30 17:21:43,447 basehttp 13036 20412 "GET /app3/game/7 HTTP/1.1" 200 826
+INFO 2024-06-30 17:21:45,260 basehttp 13036 20412 "GET /app3/ HTTP/1.1" 200 1512
+INFO 2024-06-30 17:22:21,994 basehttp 13036 20412 "GET /app3/ HTTP/1.1" 200 1512
+INFO 2024-06-30 17:22:53,693 basehttp 13036 20412 "GET /app3/ HTTP/1.1" 200 1557
+INFO 2024-06-30 17:22:55,397 basehttp 13036 20412 "GET /app3/about/ HTTP/1.1" 200 928
+INFO 2024-06-30 17:22:58,763 basehttp 13036 20412 "GET /app3/ HTTP/1.1" 200 1557
+ERROR 2024-06-30 17:24:10,312 log 13036 20412 Internal Server Error: /app3/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\myfirstproject\myapp3\views.py", line 14, in home
+    return render(request, 'myapp3/index.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'game' with no arguments not found. 1 pattern(s) tried: ['app3/game/(?P<count>[0-9]+)\\Z']
+ERROR 2024-06-30 17:24:10,316 basehttp 13036 20412 "GET /app3/ HTTP/1.1" 500 144957
+INFO 2024-06-30 17:26:05,451 basehttp 13036 20412 "GET /app3/ HTTP/1.1" 200 1570
+INFO 2024-06-30 17:30:21,175 autoreload 13036 3344 D:\GB\Django\Djangofirstproject\myfirstproject\myapp3\views.py changed, reloading.
+INFO 2024-06-30 17:30:21,683 autoreload 16076 18968 Watching for file changes with StatReloader
+INFO 2024-06-30 17:32:38,882 autoreload 16076 18968 D:\GB\Django\Djangofirstproject\myfirstproject\myapp3\views.py changed, reloading.
+INFO 2024-06-30 17:32:39,433 autoreload 24672 3208 Watching for file changes with StatReloader
+INFO 2024-06-30 17:32:43,308 basehttp 24672 2364 "GET / HTTP/1.1" 200 13
+INFO 2024-06-30 17:33:00,377 basehttp 24672 2364 "GET / HTTP/1.1" 200 13
+INFO 2024-06-30 17:33:07,512 basehttp 24672 2364 "GET /app3/ HTTP/1.1" 200 1558
+INFO 2024-06-30 17:33:30,603 basehttp 24672 2364 "GET /app3/game_coin/3 HTTP/1.1" 200 650
+INFO 2024-06-30 17:38:10,470 autoreload 24672 3208 D:\GB\Django\Djangofirstproject\myfirstproject\myapp3\views.py changed, reloading.
+INFO 2024-06-30 17:38:10,959 autoreload 27064 26840 Watching for file changes with StatReloader
+INFO 2024-06-30 17:40:13,135 autoreload 27064 26840 D:\GB\Django\Djangofirstproject\myfirstproject\myapp3\urls.py changed, reloading.
+INFO 2024-06-30 17:40:13,564 autoreload 21288 19372 Watching for file changes with StatReloader
+INFO 2024-06-30 17:40:50,249 basehttp 21288 19812 "GET /app3/game_coin/3 HTTP/1.1" 200 650
+INFO 2024-06-30 17:41:01,844 basehttp 21288 19812 "GET /app3/game_cube/6 HTTP/1.1" 200 774
+INFO 2024-06-30 17:43:32,183 autoreload 21288 19372 D:\GB\Django\Djangofirstproject\myfirstproject\myapp3\views.py changed, reloading.
+INFO 2024-06-30 17:43:32,618 autoreload 20084 23108 Watching for file changes with StatReloader
+INFO 2024-06-30 17:43:37,828 basehttp 20084 21564 "GET /app3/game_cube/6 HTTP/1.1" 200 774
+INFO 2024-06-30 17:44:00,538 autoreload 20084 23108 D:\GB\Django\Djangofirstproject\myfirstproject\myapp3\urls.py changed, reloading.
+INFO 2024-06-30 17:44:00,950 autoreload 26528 22984 Watching for file changes with StatReloader
+INFO 2024-06-30 17:44:05,311 basehttp 26528 9460 "GET /app3/game_cube/6 HTTP/1.1" 200 774
+INFO 2024-06-30 17:44:16,270 basehttp 26528 9460 "GET /app3/game_number/12 HTTP/1.1" 200 1082
+INFO 2024-06-30 17:45:08,768 basehttp 26528 9460 "GET /app3/game_number/12 HTTP/1.1" 200 1093
+INFO 2024-06-30 17:45:21,299 basehttp 26528 9460 "GET /app3/game_number/12 HTTP/1.1" 200 1093

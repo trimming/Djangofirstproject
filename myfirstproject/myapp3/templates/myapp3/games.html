@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ title }} {% endblock%}
+
+{% block content %}
+    {% for item in content %}
+            <h3>Вам выпало: {{ item }}!</h3>
+    {% endfor %}
+
+{% endblock%}
