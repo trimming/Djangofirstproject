@@ -13,4 +13,4 @@ class Command(BaseCommand):
         order = Order.objects.filter(pk=pk).first()
         if order is not None:
             order.delete()
-        self.stdout.write(f'Заказ №{order.pk} удален')
+            self.stdout.write(f'Заказ №{order.pk} удален')

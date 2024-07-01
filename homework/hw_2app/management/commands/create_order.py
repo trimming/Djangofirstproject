@@ -9,7 +9,7 @@ class Command(BaseCommand):
 
     def add_arguments(self, parser):
         parser.add_argument('client_id', type=int, help='Client ID')
-        parser.add_argument('product_id', type=int, help='Client ID')
+        parser.add_argument('product_id', type=int, help='Product ID')
 
     def handle(self, *args, **options):
         client_id = options.get('client_id')
