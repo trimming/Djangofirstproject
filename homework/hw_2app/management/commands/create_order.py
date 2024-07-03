@@ -18,7 +18,6 @@ class Command(BaseCommand):
         order = Order(
             client=Client.objects.get(pk=client_id),
             total_price=product.price * product.quantity,
-            order_date=datetime.datetime.now()
         )
 
         order.save()

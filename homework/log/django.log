@@ -494,3 +494,345 @@ INFO 2024-07-01 23:17:18,865 autoreload 15060 2636 Watching for file changes wit
 INFO 2024-07-01 23:17:22,773 basehttp 15060 9128 "GET /shop/orders/1 HTTP/1.1" 200 1100
 INFO 2024-07-01 23:22:59,056 autoreload 12824 21424 Watching for file changes with StatReloader
 INFO 2024-07-01 23:23:02,235 basehttp 12824 21984 "GET /shop/orders/1 HTTP/1.1" 200 994
+INFO 2024-07-02 20:29:17,762 autoreload 11484 3616 Watching for file changes with StatReloader
+INFO 2024-07-02 20:29:21,541 basehttp 11484 19164 "GET /shop/orders/1 HTTP/1.1" 200 712
+INFO 2024-07-02 20:31:01,777 autoreload 25624 16616 Watching for file changes with StatReloader
+INFO 2024-07-02 20:31:05,493 basehttp 25624 23272 "GET /shop/orders/1 HTTP/1.1" 200 1557
+INFO 2024-07-02 20:33:56,398 autoreload 26800 12148 Watching for file changes with StatReloader
+INFO 2024-07-02 20:34:01,230 basehttp 26800 14400 "GET /shop/orders/3 HTTP/1.1" 200 1561
+INFO 2024-07-02 21:01:18,092 autoreload 26800 12148 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-02 21:01:18,547 autoreload 4368 26512 Watching for file changes with StatReloader
+INFO 2024-07-02 21:02:07,167 autoreload 4368 26512 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-02 21:02:07,554 autoreload 21196 11324 Watching for file changes with StatReloader
+INFO 2024-07-02 21:27:57,938 autoreload 21196 11324 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-02 21:27:59,079 autoreload 15960 2836 Watching for file changes with StatReloader
+INFO 2024-07-03 20:28:09,801 autoreload 15960 2836 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-03 20:28:10,242 autoreload 9152 14796 Watching for file changes with StatReloader
+INFO 2024-07-03 20:28:22,452 autoreload 9152 14796 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-03 20:28:22,834 autoreload 21980 26948 Watching for file changes with StatReloader
+INFO 2024-07-03 20:28:34,072 autoreload 21980 26948 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-03 20:28:34,448 autoreload 13728 14076 Watching for file changes with StatReloader
+INFO 2024-07-03 20:29:04,907 autoreload 13728 14076 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-03 20:29:05,331 autoreload 19960 4092 Watching for file changes with StatReloader
+INFO 2024-07-03 20:29:33,861 autoreload 19960 4092 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-03 20:29:34,206 autoreload 9316 17380 Watching for file changes with StatReloader
+INFO 2024-07-03 20:33:16,367 autoreload 9316 17380 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-03 20:33:16,788 autoreload 1064 21312 Watching for file changes with StatReloader
+INFO 2024-07-03 20:37:34,164 autoreload 1064 21312 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-03 20:37:34,571 autoreload 16036 7704 Watching for file changes with StatReloader
+INFO 2024-07-03 20:46:59,029 autoreload 16036 7704 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-03 20:46:59,447 autoreload 21308 5448 Watching for file changes with StatReloader
+WARNING 2024-07-03 20:47:01,629 log 21308 14400 Not Found: /
+WARNING 2024-07-03 20:47:01,629 basehttp 21308 14400 "GET / HTTP/1.1" 404 2166
+WARNING 2024-07-03 20:47:10,716 log 21308 14400 Not Found: /
+WARNING 2024-07-03 20:47:10,717 basehttp 21308 14400 "GET / HTTP/1.1" 404 2166
+WARNING 2024-07-03 20:47:17,942 log 21308 14400 Not Found: /shop/orders/
+WARNING 2024-07-03 20:47:17,942 basehttp 21308 14400 "GET /shop/orders/ HTTP/1.1" 404 2694
+ERROR 2024-07-03 20:47:26,025 log 21308 14400 Internal Server Error: /shop/orders/3/7
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 39, in sort_orders_by_period
+    if period >= (now - order.order_date):
+                  ~~~~^~~~~~~~~~~~~~~~~~
+TypeError: can't subtract offset-naive and offset-aware datetimes
+ERROR 2024-07-03 20:47:26,025 basehttp 21308 14400 "GET /shop/orders/3/7 HTTP/1.1" 500 68344
+INFO 2024-07-03 20:48:37,734 autoreload 21308 5448 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-03 20:48:38,128 autoreload 15792 22924 Watching for file changes with StatReloader
+WARNING 2024-07-03 20:48:49,245 log 15792 13692 Not Found: /
+WARNING 2024-07-03 20:48:49,245 basehttp 15792 13692 "GET / HTTP/1.1" 404 2166
+INFO 2024-07-03 20:48:49,512 autoreload 15792 22924 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-03 20:48:49,986 autoreload 22568 1708 Watching for file changes with StatReloader
+WARNING 2024-07-03 20:48:51,259 log 22568 21672 Not Found: /
+WARNING 2024-07-03 20:48:51,259 basehttp 22568 21672 "GET / HTTP/1.1" 404 2166
+WARNING 2024-07-03 20:48:55,833 log 22568 21672 Not Found: /shop/orders/
+WARNING 2024-07-03 20:48:55,833 basehttp 22568 21672 "GET /shop/orders/ HTTP/1.1" 404 2694
+ERROR 2024-07-03 20:49:04,565 log 22568 21672 Internal Server Error: /shop/orders/3/7
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 39, in sort_orders_by_period
+    if period >= (now - order.order_date).days:
+                  ~~~~^~~~~~~~~~~~~~~~~~
+TypeError: can't subtract offset-naive and offset-aware datetimes
+ERROR 2024-07-03 20:49:04,572 basehttp 22568 21672 "GET /shop/orders/3/7 HTTP/1.1" 500 68353
+ERROR 2024-07-03 20:49:20,831 log 22568 21672 Internal Server Error: /shop/orders/3/7
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 39, in sort_orders_by_period
+    if period >= (now - order.order_date).days:
+                  ~~~~^~~~~~~~~~~~~~~~~~
+TypeError: can't subtract offset-naive and offset-aware datetimes
+ERROR 2024-07-03 20:49:20,831 basehttp 22568 21672 "GET /shop/orders/3/7 HTTP/1.1" 500 68491
+INFO 2024-07-03 20:51:15,851 autoreload 22568 1708 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-03 20:51:16,240 autoreload 23384 10944 Watching for file changes with StatReloader
+ERROR 2024-07-03 20:51:24,615 log 23384 4116 Internal Server Error: /shop/orders/3/7
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 38, in sort_orders_by_period
+    order_period = now - order.order_date
+                   ~~~~^~~~~~~~~~~~~~~~~~
+TypeError: can't subtract offset-naive and offset-aware datetimes
+ERROR 2024-07-03 20:51:24,615 basehttp 23384 4116 "GET /shop/orders/3/7 HTTP/1.1" 500 68257
+ERROR 2024-07-03 20:51:28,431 log 23384 4116 Internal Server Error: /shop/orders/3/7
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 38, in sort_orders_by_period
+    order_period = now - order.order_date
+                   ~~~~^~~~~~~~~~~~~~~~~~
+TypeError: can't subtract offset-naive and offset-aware datetimes
+ERROR 2024-07-03 20:51:28,433 basehttp 23384 4116 "GET /shop/orders/3/7 HTTP/1.1" 500 68257
+INFO 2024-07-03 21:03:01,655 autoreload 23384 10944 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-03 21:03:02,038 autoreload 8748 17416 Watching for file changes with StatReloader
+WARNING 2024-07-03 21:03:47,249 log 8748 8884 Not Found: /
+WARNING 2024-07-03 21:03:47,249 basehttp 8748 8884 "GET / HTTP/1.1" 404 2166
+WARNING 2024-07-03 21:03:54,673 log 8748 8884 Not Found: /
+WARNING 2024-07-03 21:03:54,674 basehttp 8748 8884 "GET / HTTP/1.1" 404 2166
+ERROR 2024-07-03 21:04:07,297 log 8748 8884 Internal Server Error: /shop/orders/1/7
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 38, in sort_orders_by_period
+    order_period = now - order.order_date
+                   ~~~~^~~~~~~~~~~~~~~~~~
+TypeError: can't subtract offset-naive and offset-aware datetimes
+ERROR 2024-07-03 21:04:07,297 basehttp 8748 8884 "GET /shop/orders/1/7 HTTP/1.1" 500 68115
+INFO 2024-07-03 21:08:03,532 autoreload 8748 17416 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-03 21:08:03,930 autoreload 13288 3616 Watching for file changes with StatReloader
+INFO 2024-07-03 21:09:36,440 autoreload 13288 3616 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-03 21:09:36,914 autoreload 26120 24700 Watching for file changes with StatReloader
+WARNING 2024-07-03 21:09:39,742 log 26120 20672 Not Found: /
+WARNING 2024-07-03 21:09:39,748 basehttp 26120 20672 "GET / HTTP/1.1" 404 2166
+ERROR 2024-07-03 21:09:51,132 log 26120 20672 Internal Server Error: /shop/orders/1/7
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 40, in sort_orders_by_period
+    if order.order_date >= find_period:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+ERROR 2024-07-03 21:09:51,132 basehttp 26120 20672 "GET /shop/orders/1/7 HTTP/1.1" 500 68520
+INFO 2024-07-03 21:11:21,162 autoreload 26120 24700 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-03 21:11:21,636 autoreload 24420 25388 Watching for file changes with StatReloader
+ERROR 2024-07-03 21:11:26,493 log 24420 16424 Internal Server Error: /shop/orders/1/7
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 43, in sort_orders_by_period
+    if order.order_date >= find_period:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+ERROR 2024-07-03 21:11:26,493 basehttp 24420 16424 "GET /shop/orders/1/7 HTTP/1.1" 500 68610
+ERROR 2024-07-03 21:11:30,280 log 24420 16424 Internal Server Error: /shop/orders/1/7
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 43, in sort_orders_by_period
+    if order.order_date >= find_period:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+ERROR 2024-07-03 21:11:30,280 basehttp 24420 16424 "GET /shop/orders/1/7 HTTP/1.1" 500 68610
+INFO 2024-07-03 21:12:28,922 autoreload 24420 25388 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-03 21:12:29,326 autoreload 19048 20452 Watching for file changes with StatReloader
+INFO 2024-07-03 21:12:34,554 basehttp 19048 2136 "GET /shop/orders/1/7 HTTP/1.1" 200 1500
+INFO 2024-07-03 21:14:13,358 autoreload 19048 20452 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-03 21:14:13,698 autoreload 21932 18736 Watching for file changes with StatReloader
+INFO 2024-07-03 21:14:17,774 basehttp 21932 3324 "GET /shop/orders/1/7 HTTP/1.1" 200 1516
+INFO 2024-07-03 21:20:08,003 autoreload 992 21588 Watching for file changes with StatReloader
+WARNING 2024-07-03 21:20:10,155 log 992 26428 Not Found: /
+WARNING 2024-07-03 21:20:10,155 basehttp 992 26428 "GET / HTTP/1.1" 404 2166
+INFO 2024-07-03 21:20:25,837 basehttp 992 26428 "GET /shop/orders/1/7 HTTP/1.1" 200 1439
+INFO 2024-07-03 21:20:47,025 autoreload 992 21588 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-03 21:20:47,371 autoreload 20876 22988 Watching for file changes with StatReloader
+ERROR 2024-07-03 21:20:51,570 log 20876 22220 Internal Server Error: /shop/orders/1/7
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 43, in sort_orders_by_period
+    if order.order_date >= find_period:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'NoneType' and 'datetime.datetime'
+ERROR 2024-07-03 21:20:51,574 basehttp 20876 22220 "GET /shop/orders/1/7 HTTP/1.1" 500 68836
+ERROR 2024-07-03 21:22:19,562 log 20876 22220 Internal Server Error: /shop/orders/1/7
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 43, in sort_orders_by_period
+    if order.order_date >= find_period:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'NoneType' and 'datetime.datetime'
+ERROR 2024-07-03 21:22:19,562 basehttp 20876 22220 "GET /shop/orders/1/7 HTTP/1.1" 500 68836
+ERROR 2024-07-03 21:22:21,437 log 20876 22220 Internal Server Error: /shop/orders/1/7
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 43, in sort_orders_by_period
+    if order.order_date >= find_period:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'NoneType' and 'datetime.datetime'
+ERROR 2024-07-03 21:22:21,439 basehttp 20876 22220 "GET /shop/orders/1/7 HTTP/1.1" 500 68836
+INFO 2024-07-03 21:23:23,993 autoreload 20876 22988 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-03 21:23:24,418 autoreload 11064 25368 Watching for file changes with StatReloader
+INFO 2024-07-03 21:23:27,913 basehttp 11064 14748 "GET /shop/orders/1/7 HTTP/1.1" 200 1439
+INFO 2024-07-03 21:26:09,048 autoreload 4296 10164 Watching for file changes with StatReloader
+INFO 2024-07-03 21:26:12,364 basehttp 4296 21472 "GET /shop/orders/1/7 HTTP/1.1" 200 1691
+INFO 2024-07-03 21:30:23,972 basehttp 4296 21472 "GET /shop/orders/1/7 HTTP/1.1" 200 1691
+INFO 2024-07-03 21:30:27,457 basehttp 4296 21472 "GET /shop/orders/1/7 HTTP/1.1" 200 1691
+INFO 2024-07-03 21:31:47,334 basehttp 4296 21472 "GET /shop/orders/1/7 HTTP/1.1" 200 1691
+INFO 2024-07-03 21:31:52,047 basehttp 4296 21472 "GET /shop/orders/1/7 HTTP/1.1" 200 1691
+INFO 2024-07-03 21:40:15,175 autoreload 11456 12616 Watching for file changes with StatReloader
+INFO 2024-07-03 21:40:22,862 basehttp 11456 3912 "GET /shop/orders/1/7 HTTP/1.1" 200 1691
+WARNING 2024-07-03 21:40:22,876 log 11456 3912 Not Found: /favicon.ico
+WARNING 2024-07-03 21:40:22,877 basehttp 11456 3912 "GET /favicon.ico HTTP/1.1" 404 2217
+INFO 2024-07-03 21:40:58,053 basehttp 11456 11904 "GET /shop/orders/1/7 HTTP/1.1" 200 1691
+INFO 2024-07-03 21:41:14,742 basehttp 11456 11904 "GET /shop/orders/3/45 HTTP/1.1" 200 1443
+INFO 2024-07-03 21:42:27,171 basehttp 11456 11904 "GET /shop/orders/3/45 HTTP/1.1" 200 1443
+INFO 2024-07-03 21:42:39,330 basehttp 11456 11904 "GET /shop/orders/1/45 HTTP/1.1" 200 1692
+INFO 2024-07-03 21:43:59,838 autoreload 4404 14700 Watching for file changes with StatReloader
+INFO 2024-07-03 21:44:03,883 basehttp 4404 12904 "GET /shop/orders/1/45 HTTP/1.1" 200 1684
+INFO 2024-07-03 22:02:05,831 autoreload 4404 14700 D:\GB\Django\Djangofirstproject\homework\hw_2app\models.py changed, reloading.
+INFO 2024-07-03 22:02:06,151 autoreload 18088 2336 Watching for file changes with StatReloader
+INFO 2024-07-03 22:02:24,554 autoreload 18088 2336 D:\GB\Django\Djangofirstproject\homework\hw_2app\models.py changed, reloading.
+INFO 2024-07-03 22:02:24,853 autoreload 10324 2304 Watching for file changes with StatReloader
+INFO 2024-07-03 22:03:12,099 autoreload 5496 12688 Watching for file changes with StatReloader
+INFO 2024-07-03 22:03:20,081 basehttp 5496 7392 "GET /shop/orders/1/45 HTTP/1.1" 200 1684
+INFO 2024-07-03 22:06:31,287 autoreload 8172 15336 Watching for file changes with StatReloader
+INFO 2024-07-03 22:06:37,079 basehttp 8172 2004 "GET /shop/orders/1/45 HTTP/1.1" 200 1259
+INFO 2024-07-03 22:07:00,123 autoreload 8172 15336 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-03 22:07:00,471 autoreload 4404 5040 Watching for file changes with StatReloader
+ERROR 2024-07-03 22:07:15,872 log 4404 7908 Internal Server Error: /shop/orders/1/45
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 43, in sort_orders_by_period
+    if order.order_date >= find_period:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+ERROR 2024-07-03 22:07:15,873 basehttp 4404 7908 "GET /shop/orders/1/45 HTTP/1.1" 500 68619
+INFO 2024-07-03 22:18:17,625 autoreload 4404 5040 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-03 22:18:17,934 autoreload 16892 8672 Watching for file changes with StatReloader
+INFO 2024-07-03 22:18:25,123 autoreload 16892 8672 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-03 22:18:25,406 autoreload 12648 2492 Watching for file changes with StatReloader
+INFO 2024-07-03 22:19:51,397 autoreload 3648 1360 Watching for file changes with StatReloader
+ERROR 2024-07-03 22:19:57,801 log 3648 5468 Internal Server Error: /shop/orders/1/45
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 42, in sort_orders_by_period
+    print(utc.localize(order.order_date))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\pytz\__init__.py", line 245, in localize
+    raise ValueError('Not naive datetime (tzinfo is already set)')
+ValueError: Not naive datetime (tzinfo is already set)
+ERROR 2024-07-03 22:19:57,801 basehttp 3648 5468 "GET /shop/orders/1/45 HTTP/1.1" 500 72481
+INFO 2024-07-03 22:20:57,746 autoreload 3648 1360 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-03 22:20:58,045 autoreload 2632 3352 Watching for file changes with StatReloader
+ERROR 2024-07-03 22:21:02,583 log 2632 6856 Internal Server Error: /shop/orders/1/45
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 42, in sort_orders_by_period
+    order.order_date = utc.localize(order.order_date)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\pytz\__init__.py", line 245, in localize
+    raise ValueError('Not naive datetime (tzinfo is already set)')
+ValueError: Not naive datetime (tzinfo is already set)
+ERROR 2024-07-03 22:21:02,583 basehttp 2632 6856 "GET /shop/orders/1/45 HTTP/1.1" 500 72529
+INFO 2024-07-03 22:21:54,195 autoreload 2632 3352 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-03 22:21:54,490 autoreload 8584 5192 Watching for file changes with StatReloader
+ERROR 2024-07-03 22:22:03,900 log 8584 3032 Internal Server Error: /shop/orders/1/45
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 42, in sort_orders_by_period
+    order.order_date = utc.localize(order.order_date)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\pytz\__init__.py", line 245, in localize
+    raise ValueError('Not naive datetime (tzinfo is already set)')
+ValueError: Not naive datetime (tzinfo is already set)
+ERROR 2024-07-03 22:22:03,900 basehttp 8584 3032 "GET /shop/orders/1/45 HTTP/1.1" 500 72583
+ERROR 2024-07-03 22:22:06,517 log 8584 3032 Internal Server Error: /shop/orders/1/45
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 42, in sort_orders_by_period
+    order.order_date = utc.localize(order.order_date)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\pytz\__init__.py", line 245, in localize
+    raise ValueError('Not naive datetime (tzinfo is already set)')
+ValueError: Not naive datetime (tzinfo is already set)
+ERROR 2024-07-03 22:22:06,517 basehttp 8584 3032 "GET /shop/orders/1/45 HTTP/1.1" 500 72583
+INFO 2024-07-03 22:22:45,565 autoreload 8584 5192 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-03 22:22:45,893 autoreload 2760 10924 Watching for file changes with StatReloader
+INFO 2024-07-03 22:22:50,578 basehttp 2760 13964 "GET /shop/orders/1/45 HTTP/1.1" 200 1259
