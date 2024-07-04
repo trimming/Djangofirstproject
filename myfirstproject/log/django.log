@@ -572,3 +572,14 @@ INFO 2024-06-30 20:41:38,330 autoreload 26168 25844 Watching for file changes wi
 INFO 2024-06-30 20:41:51,304 basehttp 26168 9640 "GET /app3/post/16 HTTP/1.1" 200 1255
 INFO 2024-06-30 20:41:53,453 basehttp 26168 9640 "GET /app3/post/16 HTTP/1.1" 200 1255
 INFO 2024-06-30 20:42:03,738 basehttp 26168 9640 "GET /app3/post/16 HTTP/1.1" 200 1255
+INFO 2024-07-04 22:52:11,432 autoreload 19128 20044 Watching for file changes with StatReloader
+INFO 2024-07-04 22:55:07,718 basehttp 19128 8932 "GET / HTTP/1.1" 200 13
+WARNING 2024-07-04 22:55:07,867 log 19128 8932 Not Found: /favicon.ico
+WARNING 2024-07-04 22:55:07,868 basehttp 19128 8932 "GET /favicon.ico HTTP/1.1" 404 3119
+INFO 2024-07-04 22:55:27,203 basehttp 19128 8932 "GET /app4/flip_coin/4 HTTP/1.1" 200 938
+INFO 2024-07-04 23:01:53,362 basehttp 19128 15972 "POST /app4/flip_coin/4 HTTP/1.1" 200 938
+INFO 2024-07-04 23:02:25,639 basehttp 19128 15972 "GET /app4/flip_cube/5 HTTP/1.1" 200 958
+INFO 2024-07-04 23:11:38,980 autoreload 19128 20044 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-04 23:11:39,479 autoreload 12100 19712 Watching for file changes with StatReloader
+INFO 2024-07-04 23:18:52,307 autoreload 12100 19712 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-04 23:18:52,866 autoreload 4252 5076 Watching for file changes with StatReloader
