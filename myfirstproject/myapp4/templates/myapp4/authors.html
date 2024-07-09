@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ title }} {% endblock%}
+
+{% block content %}
+    {% for item in authors %}
+            <p>{{ item.name }} {{ item.last_name }}</p>
+    {% endfor %}
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <input type="submit" value="Добавить автора">
+    </form>
+
+
+{% endblock%}

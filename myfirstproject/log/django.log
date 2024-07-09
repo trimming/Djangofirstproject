@@ -583,3 +583,275 @@ INFO 2024-07-04 23:11:38,980 autoreload 19128 20044 D:\GB\Django\Djangofirstproj
 INFO 2024-07-04 23:11:39,479 autoreload 12100 19712 Watching for file changes with StatReloader
 INFO 2024-07-04 23:18:52,307 autoreload 12100 19712 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
 INFO 2024-07-04 23:18:52,866 autoreload 4252 5076 Watching for file changes with StatReloader
+INFO 2024-07-09 21:49:30,189 autoreload 440 10940 Watching for file changes with StatReloader
+INFO 2024-07-09 21:49:33,274 basehttp 440 18396 "GET / HTTP/1.1" 200 13
+WARNING 2024-07-09 21:50:06,253 log 440 18396 Not Found: /app4/flip_coin
+WARNING 2024-07-09 21:50:06,267 basehttp 440 18396 "GET /app4/flip_coin HTTP/1.1" 404 3630
+INFO 2024-07-09 21:50:16,335 basehttp 440 18396 "GET /app4/flip_coin/2 HTTP/1.1" 200 822
+INFO 2024-07-09 21:53:10,939 autoreload 440 10940 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 21:53:11,253 autoreload 2956 10180 Watching for file changes with StatReloader
+INFO 2024-07-09 21:53:27,560 autoreload 2956 10180 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 21:53:27,863 autoreload 3188 20132 Watching for file changes with StatReloader
+INFO 2024-07-09 21:53:37,065 autoreload 3188 20132 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 21:53:37,379 autoreload 23444 2340 Watching for file changes with StatReloader
+INFO 2024-07-09 21:53:41,512 autoreload 23444 2340 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 21:53:41,818 autoreload 2696 2908 Watching for file changes with StatReloader
+INFO 2024-07-09 21:53:52,050 autoreload 2696 2908 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 21:53:52,367 autoreload 22988 20896 Watching for file changes with StatReloader
+INFO 2024-07-09 21:53:58,532 autoreload 22988 20896 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 21:53:58,846 autoreload 20116 21744 Watching for file changes with StatReloader
+INFO 2024-07-09 21:54:08,131 autoreload 20116 21744 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 21:54:08,445 autoreload 1892 22264 Watching for file changes with StatReloader
+INFO 2024-07-09 21:54:26,900 autoreload 1892 22264 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 21:54:27,267 autoreload 9024 21304 Watching for file changes with StatReloader
+INFO 2024-07-09 21:54:58,220 autoreload 9024 21304 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 21:54:58,549 autoreload 7948 19392 Watching for file changes with StatReloader
+INFO 2024-07-09 21:55:09,769 autoreload 7948 19392 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 21:55:10,085 autoreload 8600 11528 Watching for file changes with StatReloader
+INFO 2024-07-09 21:55:14,318 autoreload 8600 11528 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 21:55:14,676 autoreload 10992 6932 Watching for file changes with StatReloader
+INFO 2024-07-09 21:55:55,999 autoreload 10992 6932 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 21:55:56,344 autoreload 4924 23432 Watching for file changes with StatReloader
+INFO 2024-07-09 21:56:59,704 autoreload 4924 23432 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 21:57:00,049 autoreload 15600 8556 Watching for file changes with StatReloader
+INFO 2024-07-09 21:57:59,080 autoreload 15600 8556 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 21:57:59,394 autoreload 15628 18644 Watching for file changes with StatReloader
+INFO 2024-07-09 21:58:12,638 autoreload 15628 18644 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 21:58:12,958 autoreload 11572 22596 Watching for file changes with StatReloader
+INFO 2024-07-09 21:58:25,293 autoreload 11572 22596 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 21:58:25,611 autoreload 16844 20064 Watching for file changes with StatReloader
+INFO 2024-07-09 21:59:19,547 autoreload 16844 20064 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 21:59:19,867 autoreload 22648 18672 Watching for file changes with StatReloader
+INFO 2024-07-09 22:00:07,492 autoreload 22648 18672 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 22:00:07,847 autoreload 3916 2036 Watching for file changes with StatReloader
+INFO 2024-07-09 22:00:18,138 autoreload 3916 2036 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 22:00:18,494 autoreload 7872 20288 Watching for file changes with StatReloader
+INFO 2024-07-09 22:01:29,207 autoreload 7872 20288 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 22:01:29,552 autoreload 10392 11672 Watching for file changes with StatReloader
+INFO 2024-07-09 22:01:51,101 autoreload 10392 11672 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 22:01:51,477 autoreload 14692 7792 Watching for file changes with StatReloader
+INFO 2024-07-09 22:04:20,648 autoreload 14692 7792 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 22:04:20,957 autoreload 23416 2132 Watching for file changes with StatReloader
+INFO 2024-07-09 22:05:03,725 autoreload 23416 2132 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 22:05:04,067 autoreload 5488 19296 Watching for file changes with StatReloader
+INFO 2024-07-09 22:05:16,399 autoreload 5488 19296 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 22:05:16,735 autoreload 20988 10184 Watching for file changes with StatReloader
+INFO 2024-07-09 22:05:39,217 autoreload 20988 10184 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 22:05:39,543 autoreload 21636 21296 Watching for file changes with StatReloader
+INFO 2024-07-09 22:06:04,414 autoreload 21636 21296 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 22:06:04,714 autoreload 18548 204 Watching for file changes with StatReloader
+INFO 2024-07-09 22:11:55,460 autoreload 18548 204 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\urls.py changed, reloading.
+INFO 2024-07-09 22:11:55,773 autoreload 6932 2660 Watching for file changes with StatReloader
+INFO 2024-07-09 22:13:21,140 autoreload 6932 2660 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\urls.py changed, reloading.
+INFO 2024-07-09 22:13:21,480 autoreload 16484 3032 Watching for file changes with StatReloader
+INFO 2024-07-09 22:14:25,640 autoreload 16484 3032 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\urls.py changed, reloading.
+INFO 2024-07-09 22:14:25,923 autoreload 20044 5752 Watching for file changes with StatReloader
+INFO 2024-07-09 22:14:32,350 basehttp 20044 7500 "GET / HTTP/1.1" 200 13
+INFO 2024-07-09 22:14:52,582 basehttp 20044 7500 "GET /app4/perform_action HTTP/1.1" 301 0
+INFO 2024-07-09 22:14:52,653 basehttp 20044 4148 "GET /app4/perform_action/ HTTP/1.1" 200 1178
+INFO 2024-07-09 22:14:59,241 basehttp 20044 4148 "POST /app4/perform_action/ HTTP/1.1" 200 702
+INFO 2024-07-09 22:18:19,845 autoreload 20044 5752 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 22:18:20,170 autoreload 21456 4424 Watching for file changes with StatReloader
+INFO 2024-07-09 22:18:29,282 basehttp 21456 16456 "GET /app4/perform_action/ HTTP/1.1" 200 1178
+INFO 2024-07-09 22:18:34,380 basehttp 21456 16456 "POST /app4/perform_action/ HTTP/1.1" 200 656
+INFO 2024-07-09 22:23:04,757 basehttp 21456 16456 "GET /app4/perform_action/ HTTP/1.1" 200 1178
+INFO 2024-07-09 22:23:13,111 basehttp 21456 16456 "POST /app4/perform_action/ HTTP/1.1" 200 831
+INFO 2024-07-09 22:23:22,431 basehttp 21456 16456 "POST /app4/perform_action/ HTTP/1.1" 200 831
+INFO 2024-07-09 22:23:26,079 basehttp 21456 16456 "GET /app4/perform_action/ HTTP/1.1" 200 1178
+INFO 2024-07-09 22:23:34,324 basehttp 21456 16456 "POST /app4/perform_action/ HTTP/1.1" 200 534
+INFO 2024-07-09 22:32:26,628 autoreload 21456 4424 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\forms.py changed, reloading.
+INFO 2024-07-09 22:32:26,953 autoreload 16960 19884 Watching for file changes with StatReloader
+INFO 2024-07-09 22:35:14,463 autoreload 16960 19884 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\forms.py changed, reloading.
+INFO 2024-07-09 22:35:14,763 autoreload 10484 8496 Watching for file changes with StatReloader
+INFO 2024-07-09 22:35:22,942 autoreload 10484 8496 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\forms.py changed, reloading.
+INFO 2024-07-09 22:35:23,258 autoreload 14092 21520 Watching for file changes with StatReloader
+INFO 2024-07-09 22:35:34,570 autoreload 14092 21520 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\forms.py changed, reloading.
+INFO 2024-07-09 22:35:34,933 autoreload 15136 460 Watching for file changes with StatReloader
+INFO 2024-07-09 22:35:47,267 autoreload 15136 460 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\forms.py changed, reloading.
+INFO 2024-07-09 22:35:47,592 autoreload 21104 13552 Watching for file changes with StatReloader
+INFO 2024-07-09 22:36:06,923 autoreload 21104 13552 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\forms.py changed, reloading.
+INFO 2024-07-09 22:36:07,225 autoreload 448 3980 Watching for file changes with StatReloader
+INFO 2024-07-09 22:36:16,517 autoreload 448 3980 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\forms.py changed, reloading.
+INFO 2024-07-09 22:36:16,819 autoreload 13120 20004 Watching for file changes with StatReloader
+INFO 2024-07-09 22:36:24,999 autoreload 13120 20004 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\forms.py changed, reloading.
+INFO 2024-07-09 22:36:25,300 autoreload 11072 12832 Watching for file changes with StatReloader
+INFO 2024-07-09 22:36:30,546 autoreload 11072 12832 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\forms.py changed, reloading.
+INFO 2024-07-09 22:36:30,854 autoreload 4292 20428 Watching for file changes with StatReloader
+INFO 2024-07-09 22:36:36,084 autoreload 4292 20428 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\forms.py changed, reloading.
+INFO 2024-07-09 22:36:36,393 autoreload 5876 18764 Watching for file changes with StatReloader
+INFO 2024-07-09 22:36:40,527 autoreload 5876 18764 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\forms.py changed, reloading.
+INFO 2024-07-09 22:36:40,827 autoreload 18228 13284 Watching for file changes with StatReloader
+INFO 2024-07-09 22:36:51,047 autoreload 18228 13284 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\forms.py changed, reloading.
+INFO 2024-07-09 22:36:51,357 autoreload 22972 20932 Watching for file changes with StatReloader
+INFO 2024-07-09 22:37:08,654 autoreload 22972 20932 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\forms.py changed, reloading.
+INFO 2024-07-09 22:37:08,959 autoreload 21724 21716 Watching for file changes with StatReloader
+INFO 2024-07-09 22:38:01,577 autoreload 21724 21716 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\forms.py changed, reloading.
+INFO 2024-07-09 22:38:01,890 autoreload 15796 3980 Watching for file changes with StatReloader
+INFO 2024-07-09 22:39:04,115 autoreload 15796 3980 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\forms.py changed, reloading.
+INFO 2024-07-09 22:39:04,448 autoreload 2636 12500 Watching for file changes with StatReloader
+INFO 2024-07-09 22:52:54,669 autoreload 2636 12500 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\forms.py changed, reloading.
+INFO 2024-07-09 22:52:55,077 autoreload 9512 5640 Watching for file changes with StatReloader
+INFO 2024-07-09 23:03:51,302 autoreload 9512 5640 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\models.py changed, reloading.
+INFO 2024-07-09 23:03:51,637 autoreload 22228 16172 Watching for file changes with StatReloader
+INFO 2024-07-09 23:04:59,476 autoreload 22228 16172 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-09 23:04:59,823 autoreload 20936 10992 Watching for file changes with StatReloader
+INFO 2024-07-09 23:27:59,529 autoreload 10336 21724 Watching for file changes with StatReloader
+INFO 2024-07-09 23:28:36,101 autoreload 10336 21724 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\urls.py changed, reloading.
+INFO 2024-07-09 23:28:36,375 autoreload 5152 22936 Watching for file changes with StatReloader
+INFO 2024-07-09 23:28:39,460 basehttp 5152 14684 "GET / HTTP/1.1" 200 13
+INFO 2024-07-09 23:28:59,622 basehttp 5152 14684 "GET /app4/add_author HTTP/1.1" 301 0
+ERROR 2024-07-09 23:28:59,838 log 5152 6468 Internal Server Error: /app4/add_author/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: myapp4_author
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py", line 74, in add_author
+    return render(request, 'myapp4/authors.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\defaulttags.py", line 198, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: myapp4_author
+ERROR 2024-07-09 23:28:59,854 basehttp 5152 6468 "GET /app4/add_author/ HTTP/1.1" 500 209430
+INFO 2024-07-09 23:30:15,175 autoreload 2392 21700 Watching for file changes with StatReloader
+INFO 2024-07-09 23:30:17,321 basehttp 2392 11732 "GET / HTTP/1.1" 200 13
+INFO 2024-07-09 23:30:36,568 basehttp 2392 11732 "GET /app4/add_author/ HTTP/1.1" 200 1320
+ERROR 2024-07-09 23:31:08,235 log 2392 11732 Internal Server Error: /app4/add_author/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py", line 65, in add_author
+    email=form_data['email'], bio=form_data['bio'],
+                                  ~~~~~~~~~^^^^^^^
+KeyError: 'bio'
+ERROR 2024-07-09 23:31:08,235 basehttp 2392 11732 "POST /app4/add_author/ HTTP/1.1" 500 69333
+INFO 2024-07-09 23:32:15,923 autoreload 2392 21700 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\forms.py changed, reloading.
+INFO 2024-07-09 23:32:16,251 autoreload 8484 4144 Watching for file changes with StatReloader
+INFO 2024-07-09 23:32:21,661 basehttp 8484 1772 "GET /app4/add_author/ HTTP/1.1" 200 1463
+INFO 2024-07-09 23:32:58,760 basehttp 8484 1772 "POST /app4/add_author/ HTTP/1.1" 200 1614
+INFO 2024-07-09 23:36:19,222 autoreload 8484 4144 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\forms.py changed, reloading.
+INFO 2024-07-09 23:36:19,565 autoreload 3176 5164 Watching for file changes with StatReloader
+INFO 2024-07-09 23:41:18,280 autoreload 3176 5164 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\forms.py changed, reloading.
+INFO 2024-07-09 23:41:18,606 autoreload 20100 17372 Watching for file changes with StatReloader
+INFO 2024-07-09 23:42:19,455 autoreload 20100 17372 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\forms.py changed, reloading.
+INFO 2024-07-09 23:42:19,807 autoreload 23020 16128 Watching for file changes with StatReloader
+INFO 2024-07-09 23:42:49,542 autoreload 23020 16128 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\forms.py changed, reloading.
+INFO 2024-07-09 23:42:49,863 autoreload 9824 23312 Watching for file changes with StatReloader
+INFO 2024-07-10 00:26:22,096 autoreload 23532 23068 Watching for file changes with StatReloader
+INFO 2024-07-10 00:26:53,197 autoreload 1804 18032 Watching for file changes with StatReloader
+INFO 2024-07-10 00:27:18,624 autoreload 1804 18032 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\forms.py changed, reloading.
+INFO 2024-07-10 00:27:18,916 autoreload 12884 22560 Watching for file changes with StatReloader
+INFO 2024-07-10 00:27:46,428 autoreload 12884 22560 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\forms.py changed, reloading.
+INFO 2024-07-10 00:27:46,726 autoreload 15288 14064 Watching for file changes with StatReloader
+INFO 2024-07-10 00:27:49,242 basehttp 15288 22696 "GET / HTTP/1.1" 200 13
+INFO 2024-07-10 00:28:22,205 basehttp 15288 22696 "GET /app4/add_article HTTP/1.1" 301 0
+INFO 2024-07-10 00:28:22,241 basehttp 15288 23356 "GET /app4/add_article/ HTTP/1.1" 200 1672
+INFO 2024-07-10 00:30:02,679 autoreload 15288 14064 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\models.py changed, reloading.
+INFO 2024-07-10 00:30:02,995 autoreload 6716 22316 Watching for file changes with StatReloader
+INFO 2024-07-10 00:30:19,746 basehttp 6716 21392 "GET /app4/add_article/ HTTP/1.1" 200 1676
+INFO 2024-07-10 00:30:44,333 autoreload 6716 22316 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\models.py changed, reloading.
+INFO 2024-07-10 00:30:44,653 autoreload 10964 9892 Watching for file changes with StatReloader
+INFO 2024-07-10 00:32:33,557 autoreload 10964 9892 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-10 00:32:33,958 autoreload 12884 15872 Watching for file changes with StatReloader
+INFO 2024-07-10 00:32:53,413 autoreload 12884 15872 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-10 00:32:53,773 autoreload 16268 10656 Watching for file changes with StatReloader
+INFO 2024-07-10 00:34:32,670 autoreload 16268 10656 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-10 00:34:32,996 autoreload 23120 2052 Watching for file changes with StatReloader
