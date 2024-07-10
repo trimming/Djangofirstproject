@@ -17,6 +17,8 @@ class Product(models.Model):
     quantity = models.IntegerField()
     add_date = models.DateTimeField()
 
+    def __str__(self):
+        return f'"{self.name}"'
 
 class Order(models.Model):
     client = models.ForeignKey(Client, on_delete=models.CASCADE)

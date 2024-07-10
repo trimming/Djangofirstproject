@@ -836,3 +836,357 @@ ERROR 2024-07-03 22:22:06,517 basehttp 8584 3032 "GET /shop/orders/1/45 HTTP/1.1
 INFO 2024-07-03 22:22:45,565 autoreload 8584 5192 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
 INFO 2024-07-03 22:22:45,893 autoreload 2760 10924 Watching for file changes with StatReloader
 INFO 2024-07-03 22:22:50,578 basehttp 2760 13964 "GET /shop/orders/1/45 HTTP/1.1" 200 1259
+INFO 2024-07-10 22:09:14,629 autoreload 22544 6172 Watching for file changes with StatReloader
+INFO 2024-07-10 22:11:21,286 autoreload 22544 6172 D:\GB\Django\Djangofirstproject\homework\hw_2app\forms.py changed, reloading.
+INFO 2024-07-10 22:11:21,792 autoreload 19240 4268 Watching for file changes with StatReloader
+INFO 2024-07-10 22:11:46,599 autoreload 19240 4268 D:\GB\Django\Djangofirstproject\homework\hw_2app\forms.py changed, reloading.
+INFO 2024-07-10 22:11:47,020 autoreload 15952 22832 Watching for file changes with StatReloader
+WARNING 2024-07-10 22:11:49,781 log 15952 18940 Not Found: /
+WARNING 2024-07-10 22:11:49,781 basehttp 15952 18940 "GET / HTTP/1.1" 404 2166
+INFO 2024-07-10 22:12:10,937 basehttp 15952 18940 "GET /shop/ HTTP/1.1" 200 502
+INFO 2024-07-10 22:12:43,650 basehttp 15952 18940 "GET /shop/update_product HTTP/1.1" 301 0
+ERROR 2024-07-10 22:12:43,718 log 15952 20148 Internal Server Error: /shop/update_product/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 71, in update_product
+    return render(request, 'hw_2app/product_form.html', {'form': form, 'message': message})
+                                                                                  ^^^^^^^
+UnboundLocalError: cannot access local variable 'message' where it is not associated with a value
+ERROR 2024-07-10 22:12:43,724 basehttp 15952 20148 "GET /shop/update_product/ HTTP/1.1" 500 67212
+INFO 2024-07-10 22:13:19,309 autoreload 15952 22832 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-10 22:13:19,863 autoreload 20892 14700 Watching for file changes with StatReloader
+INFO 2024-07-10 22:13:24,940 basehttp 20892 23044 "GET /shop/update_product/ HTTP/1.1" 200 1738
+INFO 2024-07-10 22:14:39,030 basehttp 20892 23044 "POST /shop/update_product/ HTTP/1.1" 200 1785
+INFO 2024-07-10 22:16:38,134 autoreload 20892 14700 D:\GB\Django\Djangofirstproject\homework\hw_2app\forms.py changed, reloading.
+INFO 2024-07-10 22:16:38,539 autoreload 1644 14304 Watching for file changes with StatReloader
+ERROR 2024-07-10 22:16:50,331 log 1644 16344 Internal Server Error: /shop/update_product/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 68, in update_product
+    product.save()
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1040, in _save_table
+    updated = self._do_update(
+              ^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1105, in _do_update
+    return filtered._update(values) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 1278, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1990, in execute_sql
+    cursor = super().execute_sql(result_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+ERROR 2024-07-10 22:16:50,338 basehttp 1644 16344 "POST /shop/update_product/ HTTP/1.1" 500 151513
+ERROR 2024-07-10 22:17:04,116 log 1644 16344 Internal Server Error: /shop/update_product/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 68, in update_product
+    product.save()
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1040, in _save_table
+    updated = self._do_update(
+              ^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1105, in _do_update
+    return filtered._update(values) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 1278, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1990, in execute_sql
+    cursor = super().execute_sql(result_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+ERROR 2024-07-10 22:17:04,121 basehttp 1644 16344 "POST /shop/update_product/ HTTP/1.1" 500 151513
+INFO 2024-07-10 22:17:15,923 basehttp 1644 16344 "POST /shop/update_product/ HTTP/1.1" 200 1785
+INFO 2024-07-10 22:17:18,683 basehttp 1644 16344 "POST /shop/update_product/ HTTP/1.1" 200 1785
+INFO 2024-07-10 22:19:53,820 autoreload 1644 14304 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-10 22:19:54,242 autoreload 9784 15132 Watching for file changes with StatReloader
+ERROR 2024-07-10 22:20:10,872 log 9784 22956 Internal Server Error: /shop/update_product/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 69, in update_product
+    product.save()
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1040, in _save_table
+    updated = self._do_update(
+              ^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1105, in _do_update
+    return filtered._update(values) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 1278, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1990, in execute_sql
+    cursor = super().execute_sql(result_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+ERROR 2024-07-10 22:20:10,872 basehttp 9784 22956 "POST /shop/update_product/ HTTP/1.1" 500 151565
+ERROR 2024-07-10 22:20:10,921 log 9784 11952 Internal Server Error: /shop/update_product/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 69, in update_product
+    product.save()
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1040, in _save_table
+    updated = self._do_update(
+              ^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1105, in _do_update
+    return filtered._update(values) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 1278, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1990, in execute_sql
+    cursor = super().execute_sql(result_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+INFO 2024-07-10 22:20:10,921 basehttp 9784 11952 - Broken pipe from ('127.0.0.1', 59748)
+INFO 2024-07-10 22:20:27,427 basehttp 9784 22956 "POST /shop/update_product/ HTTP/1.1" 200 1785
+INFO 2024-07-10 22:20:30,768 basehttp 9784 22956 "POST /shop/update_product/ HTTP/1.1" 200 1785
+INFO 2024-07-10 22:24:14,167 basehttp 9784 22956 "POST /shop/update_product/ HTTP/1.1" 200 1852
+INFO 2024-07-10 22:31:58,996 basehttp 9784 13684 "POST /shop/update_product/ HTTP/1.1" 200 1895
+INFO 2024-07-10 22:32:03,692 basehttp 9784 13684 "POST /shop/update_product/ HTTP/1.1" 200 1895
+INFO 2024-07-10 22:32:21,599 basehttp 9784 13684 "POST /shop/update_product/ HTTP/1.1" 200 1895
+INFO 2024-07-10 22:32:31,619 basehttp 9784 13684 "GET /shop/update_product/ HTTP/1.1" 200 1828
+INFO 2024-07-10 22:33:55,205 basehttp 9784 13684 "POST /shop/update_product/ HTTP/1.1" 200 1904
+INFO 2024-07-10 22:34:47,794 autoreload 9784 15132 D:\GB\Django\Djangofirstproject\homework\hw_2app\forms.py changed, reloading.
+INFO 2024-07-10 22:34:48,266 autoreload 21552 9828 Watching for file changes with StatReloader
+ERROR 2024-07-10 22:34:56,805 log 21552 15092 Internal Server Error: /shop/update_product/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 69, in update_product
+    product.save()
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1040, in _save_table
+    updated = self._do_update(
+              ^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1105, in _do_update
+    return filtered._update(values) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 1278, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1990, in execute_sql
+    cursor = super().execute_sql(result_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+ERROR 2024-07-10 22:34:56,813 basehttp 21552 15092 "POST /shop/update_product/ HTTP/1.1" 500 151574
+INFO 2024-07-10 22:35:10,051 basehttp 21552 15092 "POST /shop/update_product/ HTTP/1.1" 200 1916
+INFO 2024-07-10 22:36:21,267 autoreload 21552 9828 D:\GB\Django\Djangofirstproject\homework\hw_2app\forms.py changed, reloading.
+INFO 2024-07-10 22:36:21,813 autoreload 22544 14016 Watching for file changes with StatReloader
+INFO 2024-07-10 22:36:25,841 basehttp 22544 16172 "POST /shop/update_product/ HTTP/1.1" 200 1950
+INFO 2024-07-10 22:37:47,219 autoreload 22544 14016 D:\GB\Django\Djangofirstproject\homework\hw_2app\forms.py changed, reloading.
+INFO 2024-07-10 22:37:47,696 autoreload 19836 18232 Watching for file changes with StatReloader
+INFO 2024-07-10 22:37:52,356 basehttp 19836 13720 "POST /shop/update_product/ HTTP/1.1" 200 1887

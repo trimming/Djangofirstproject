@@ -2,11 +2,14 @@ import logging
 from datetime import datetime, timedelta
 import pytz
 from django.shortcuts import render
+
+from .forms import ProductForm
 from .models import Product, Client, Order
 
 logger = logging.getLogger(__name__)
 
 utc = pytz.UTC
+
 
 def home(request):
     logger.info("Index page accessed")
@@ -49,3 +52,23 @@ def sort_orders_by_period(request, client_id: int, period: int):
         'period': period,
     }
     return render(request, 'hw_2app/sortorders.html', context)
+
+
+def update_product(request):
+    message = ''
+    if request.method == 'POST':
+        form = ProductForm(request.POST)
+        message = 'Ошибка в данных'
+        if form.is_valid():
+            form_data = form.cleaned_data
+            product = form_data['product']
+            product.desc = form_data['desc']
+            product.price = form_data['price']
+            product.quantity = form_data['quantity']
+            product.add_date = form_data['add_date']
+            product.save()
+            message = 'Продукт изменен'
+    else:
+        form = ProductForm()
+    return render(request, 'hw_2app/product_form.html', {'form': form, 'message': message})
+
