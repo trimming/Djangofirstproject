@@ -91,11 +91,15 @@ def add_article(request):
 
 
 def get_articles(request, author_id: int=None):
-    author = Author.objects.filter(id=author_id).first()
-    articles = Article.objects.filter(author=author)
+    if author_id:
+        author = Author.objects.filter(id=author_id).first()
+        articles = Article.objects.filter(author=author)
+        title = f'Статьи автора: {author.full_name()}'
+    else:
+        title = 'Все статьи'
+        articles = Article.objects.all()
     context = {
-        'title': 'News',
-        'author_name': author.full_name(),
+        'title': title,
         'articles_list': articles,
     }
     return render(request, 'myapp4/get_articles.html', context)

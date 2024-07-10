@@ -855,3 +855,34 @@ INFO 2024-07-10 00:32:53,413 autoreload 12884 15872 D:\GB\Django\Djangofirstproj
 INFO 2024-07-10 00:32:53,773 autoreload 16268 10656 Watching for file changes with StatReloader
 INFO 2024-07-10 00:34:32,670 autoreload 16268 10656 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
 INFO 2024-07-10 00:34:32,996 autoreload 23120 2052 Watching for file changes with StatReloader
+INFO 2024-07-10 18:59:36,295 autoreload 19808 19760 Watching for file changes with StatReloader
+INFO 2024-07-10 19:00:12,086 autoreload 19808 19760 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-10 19:00:12,505 autoreload 20884 11732 Watching for file changes with StatReloader
+INFO 2024-07-10 19:00:42,025 autoreload 20884 11732 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-10 19:00:42,508 autoreload 10584 13872 Watching for file changes with StatReloader
+INFO 2024-07-10 19:00:49,866 autoreload 10584 13872 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-10 19:00:50,317 autoreload 10756 7920 Watching for file changes with StatReloader
+INFO 2024-07-10 19:01:42,765 autoreload 10756 7920 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-10 19:01:43,153 autoreload 8048 18732 Watching for file changes with StatReloader
+INFO 2024-07-10 19:01:53,507 autoreload 8048 18732 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-10 19:01:53,989 autoreload 11148 20044 Watching for file changes with StatReloader
+INFO 2024-07-10 19:03:02,789 autoreload 11148 20044 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-10 19:03:03,218 autoreload 23164 12616 Watching for file changes with StatReloader
+INFO 2024-07-10 19:03:36,558 basehttp 23164 18868 "GET /app4/add_article/ HTTP/1.1" 200 1676
+INFO 2024-07-10 19:05:45,267 basehttp 23164 18868 "POST /app4/add_article/ HTTP/1.1" 302 0
+ERROR 2024-07-10 19:05:45,407 log 23164 18868 Internal Server Error: /app4/get_articles/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py", line 103, in get_articles
+    'author_name': author.full_name(),
+                   ^^^^^^
+UnboundLocalError: cannot access local variable 'author' where it is not associated with a value
+ERROR 2024-07-10 19:05:45,412 basehttp 23164 18868 "GET /app4/get_articles/ HTTP/1.1" 500 67997
+INFO 2024-07-10 19:13:47,378 autoreload 23164 12616 D:\GB\Django\Djangofirstproject\myfirstproject\myapp4\views.py changed, reloading.
+INFO 2024-07-10 19:13:47,871 autoreload 15224 1648 Watching for file changes with StatReloader
+INFO 2024-07-10 19:30:10,493 basehttp 15224 22356 "GET /app4/get_articles/ HTTP/1.1" 200 724

@@ -3,7 +3,7 @@
 {% block title %} {{ title }} {% endblock%}
 
 {% block content %}
-    <h2>Статьи автора {{ author_name }}:</h2>
+    <h2>{{ title }}:</h2>
     {% for article in articles_list %}
         {% if article.is_published %}
             <h3><a href="{% url 'post' article.id %}">{{ article.title }}</a></h3>
