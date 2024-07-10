@@ -11,3 +11,8 @@ class ProductForm(forms.Form):
     price = forms.DecimalField(max_digits=7, decimal_places=2, label='Цена')
     quantity = forms.IntegerField(label='Количество')
     add_date = forms.DateTimeField(initial=datetime.date.today, label='Дата изменения')
+    image = forms.ImageField()
+
+
+class ImageForm(forms.Form):
+    image = forms.ImageField()

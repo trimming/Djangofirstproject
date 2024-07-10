@@ -1,9 +1,10 @@
 import logging
 from datetime import datetime, timedelta
 import pytz
+from django.core.files.storage import FileSystemStorage
 from django.shortcuts import render
 
-from .forms import ProductForm
+from .forms import ProductForm, ImageForm
 from .models import Product, Client, Order
 
 logger = logging.getLogger(__name__)
@@ -66,9 +67,22 @@ def update_product(request):
             product.price = form_data['price']
             product.quantity = form_data['quantity']
             product.add_date = form_data['add_date']
+
             product.save()
             message = 'Продукт изменен'
     else:
         form = ProductForm()
     return render(request, 'hw_2app/product_form.html', {'form': form, 'message': message})
 
+
+# def upload_img(request):
+#     if request.method == 'POST':
+#         form = ImageForm(request.POST, request.FILES)
+#         if form.is_valid():
+#             image = form.cleaned_data['image']
+#             fs = FileSystemStorage()
+#             fs.save(image.name, image)
+#
+#     else:
+#         form = ImageForm()
+#     return render(request, 'hw_2app/upload_img.html', {'form': form})

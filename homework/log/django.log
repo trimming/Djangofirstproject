@@ -1190,3 +1190,62 @@ INFO 2024-07-10 22:36:25,841 basehttp 22544 16172 "POST /shop/update_product/ HT
 INFO 2024-07-10 22:37:47,219 autoreload 22544 14016 D:\GB\Django\Djangofirstproject\homework\hw_2app\forms.py changed, reloading.
 INFO 2024-07-10 22:37:47,696 autoreload 19836 18232 Watching for file changes with StatReloader
 INFO 2024-07-10 22:37:52,356 basehttp 19836 13720 "POST /shop/update_product/ HTTP/1.1" 200 1887
+INFO 2024-07-10 23:33:46,073 autoreload 2444 7360 Watching for file changes with StatReloader
+INFO 2024-07-10 23:34:05,151 basehttp 2444 7532 "GET /shop/upload HTTP/1.1" 301 0
+INFO 2024-07-10 23:34:05,170 basehttp 2444 22836 "GET /shop/upload/ HTTP/1.1" 200 879
+INFO 2024-07-10 23:34:15,994 basehttp 2444 22836 "POST /shop/upload/ HTTP/1.1" 200 879
+INFO 2024-07-10 23:36:46,810 basehttp 2444 22836 "GET /shop/update_product/ HTTP/1.1" 200 1811
+INFO 2024-07-10 23:36:59,562 basehttp 2444 22836 "GET /shop/upload/ HTTP/1.1" 200 879
+INFO 2024-07-10 23:39:53,911 autoreload 2444 7360 D:\GB\Django\Djangofirstproject\homework\hw_2app\forms.py changed, reloading.
+INFO 2024-07-10 23:39:54,384 autoreload 21308 11600 Watching for file changes with StatReloader
+INFO 2024-07-10 23:40:09,807 basehttp 21308 2592 "GET /shop/update_product/ HTTP/1.1" 200 1956
+INFO 2024-07-10 23:40:45,239 basehttp 21308 2592 "POST /shop/update_product/ HTTP/1.1" 200 2101
+INFO 2024-07-10 23:41:17,577 basehttp 21308 2592 "POST /shop/update_product/ HTTP/1.1" 200 2101
+INFO 2024-07-10 23:41:28,613 basehttp 21308 2592 "POST /shop/update_product/ HTTP/1.1" 200 2101
+INFO 2024-07-10 23:44:26,897 basehttp 21308 2592 "POST /shop/update_product/ HTTP/1.1" 200 2101
+INFO 2024-07-10 23:44:38,009 basehttp 21308 2592 "POST /shop/update_product/ HTTP/1.1" 200 2101
+INFO 2024-07-10 23:44:42,876 basehttp 21308 2592 "POST /shop/update_product/ HTTP/1.1" 200 2101
+INFO 2024-07-10 23:44:46,383 basehttp 21308 2592 "GET /shop/update_product/ HTTP/1.1" 200 1956
+INFO 2024-07-10 23:53:24,545 basehttp 21308 6476 "POST /shop/update_product/ HTTP/1.1" 200 2103
+INFO 2024-07-10 23:54:03,965 basehttp 21308 6476 "POST /shop/update_product/ HTTP/1.1" 200 2103
+INFO 2024-07-10 23:58:25,930 autoreload 21308 11600 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-10 23:58:26,409 autoreload 21268 4760 Watching for file changes with StatReloader
+INFO 2024-07-10 23:58:31,762 basehttp 21268 22688 "POST /shop/update_product/ HTTP/1.1" 200 2103
+INFO 2024-07-10 23:58:42,996 basehttp 21268 22688 "POST /shop/update_product/ HTTP/1.1" 200 2103
+INFO 2024-07-10 23:58:48,400 basehttp 21268 22688 "POST /shop/update_product/ HTTP/1.1" 200 2103
+INFO 2024-07-10 23:59:44,091 basehttp 21268 22612 "GET /shop/update_product/ HTTP/1.1" 200 1956
+INFO 2024-07-11 00:00:04,131 basehttp 21268 22612 "POST /shop/update_product/ HTTP/1.1" 200 2096
+INFO 2024-07-11 00:00:48,943 basehttp 21268 22612 "GET /shop/upload/ HTTP/1.1" 200 879
+ERROR 2024-07-11 00:00:55,701 log 21268 22612 Internal Server Error: /shop/upload/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\middleware\clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+       ^^^^^^^^^^^^
+AttributeError: 'InMemoryUploadedFile' object has no attribute 'get'
+ERROR 2024-07-11 00:00:55,701 basehttp 21268 22612 "POST /shop/upload/ HTTP/1.1" 500 68103
+INFO 2024-07-11 00:01:52,146 autoreload 21268 4760 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-11 00:01:52,629 autoreload 5296 15412 Watching for file changes with StatReloader
+INFO 2024-07-11 00:01:57,788 basehttp 5296 11320 "POST /shop/upload/ HTTP/1.1" 200 879
+INFO 2024-07-11 00:02:04,939 basehttp 5296 11320 "POST /shop/upload/ HTTP/1.1" 200 879
+INFO 2024-07-11 00:02:47,365 autoreload 5296 15412 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-11 00:02:47,830 autoreload 1804 15812 Watching for file changes with StatReloader
+INFO 2024-07-11 00:02:54,957 basehttp 1804 2472 "GET /shop/upload/ HTTP/1.1" 200 879
+INFO 2024-07-11 00:02:59,941 basehttp 1804 2472 "GET /shop/update_product/ HTTP/1.1" 200 1956
+INFO 2024-07-11 00:03:51,178 basehttp 1804 2472 "POST /shop/update_product/ HTTP/1.1" 200 2093
+INFO 2024-07-11 00:09:31,707 autoreload 1804 15812 D:\GB\Django\Djangofirstproject\homework\hw_2app\forms.py changed, reloading.
+INFO 2024-07-11 00:09:32,136 autoreload 11408 7500 Watching for file changes with StatReloader
+INFO 2024-07-11 00:11:23,888 autoreload 11408 7500 D:\GB\Django\Djangofirstproject\homework\hw_2app\models.py changed, reloading.
+INFO 2024-07-11 00:11:24,404 autoreload 10732 6568 Watching for file changes with StatReloader
+INFO 2024-07-11 00:49:05,785 autoreload 11140 4636 Watching for file changes with StatReloader
+INFO 2024-07-11 00:49:11,690 basehttp 11140 14120 "POST /shop/update_product/ HTTP/1.1" 200 1926
+INFO 2024-07-11 00:49:16,745 basehttp 11140 14120 "GET /shop/update_product HTTP/1.1" 301 0
+INFO 2024-07-11 00:49:16,758 basehttp 11140 15804 "GET /shop/update_product/ HTTP/1.1" 200 1668
+INFO 2024-07-11 00:49:44,656 basehttp 11140 15804 "GET /shop/update_product/ HTTP/1.1" 200 1668
+INFO 2024-07-11 00:50:28,477 autoreload 11140 4636 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-11 00:50:28,960 autoreload 7200 7844 Watching for file changes with StatReloader
