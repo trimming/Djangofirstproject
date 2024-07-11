@@ -4,7 +4,7 @@ import pytz
 from django.core.files.storage import FileSystemStorage
 from django.shortcuts import render, redirect
 
-from .forms import ProductForm, ImageForm, ProductFormForAdd
+from .forms import ImageForm, ProductFormForAdd, ProductForm
 from .models import Product, Client, Order
 
 logger = logging.getLogger(__name__)
@@ -69,7 +69,7 @@ def update_product(request):
             product.add_date = form_data['add_date']
             product.save()
             message = 'Товар изменен'
-            return redirect('display_product')
+            # return redirect('display_product')
     else:
         form = ProductForm()
     return render(request, 'hw_2app/product_form.html', {'form': form, 'message': message, 'btn_text': 'Изменить'})
@@ -93,13 +93,14 @@ def add_product(request):
         form = ProductFormForAdd(request.POST)
         if form.is_valid():
             form_data = form.cleaned_data
-            Product.objects.create(name=form_data['name'],
+            product = Product.objects.create(name=form_data['name'],
                                    desc=form_data['desc'],
                                    price=form_data['price'],
                                    quantity=form_data['quantity'],
                                    add_date=form_data['add_date'],
                                    )
-            # return redirect('upload_img')
+            product.save()
+            return redirect('upload_img')
     else:
         form = ProductFormForAdd()
     return render(request, 'hw_2app/product_form.html', {'form': form, 'btn_text': 'Добавить'})
