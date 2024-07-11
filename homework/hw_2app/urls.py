@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .views import get_orders, home, sort_orders_by_period, update_product, upload_img
+from .views import get_orders, home, sort_orders_by_period, update_product, upload_img, add_product, display_product
 
 urlpatterns = [
     path('', home, name='home'),

@@ -2,9 +2,9 @@ import logging
 from datetime import datetime, timedelta
 import pytz
 from django.core.files.storage import FileSystemStorage
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
-from .forms import ProductForm, ImageForm
+from .forms import ProductForm, ImageForm, ProductFormForAdd
 from .models import Product, Client, Order
 
 logger = logging.getLogger(__name__)
@@ -86,20 +86,20 @@ def upload_img(request):
     else:
         form = ImageForm()
     return render(request, 'hw_2app/upload_img.html', {'form': form})
-    
 
-def add_product(request):    
-    if request.method == 'POST':        
-        form = ProductFormForAdd(request.POST)        
+
+def add_product(request):
+    if request.method == 'POST':
+        form = ProductFormForAdd(request.POST)
         if form.is_valid():
             form_data = form.cleaned_data
             Product.objects.create(name=form_data['name'],
-                                             desc=form_data['desc'],
-                                             price=form_data['price'],
-                                             quantity=form_data['quantity'],
-                                             add_date=form_data['add_date'],  
-                                             )
-            return redirect('upload_img')
+                                   desc=form_data['desc'],
+                                   price=form_data['price'],
+                                   quantity=form_data['quantity'],
+                                   add_date=form_data['add_date'],
+                                   )
+            # return redirect('upload_img')
     else:
         form = ProductFormForAdd()
     return render(request, 'hw_2app/product_form.html', {'form': form, 'btn_text': 'Добавить'})
@@ -108,9 +108,8 @@ def add_product(request):
 def display_product(request):
     if request.method == 'GET':
         products = Product.objects.all()
-        context = [
+        context = {
             'title': 'Все товары',
             'products': products,
-            ]            
+        }
         return render(request, 'hw_2app/display_product.html', context)
-
