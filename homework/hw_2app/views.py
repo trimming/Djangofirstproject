@@ -67,22 +67,49 @@ def update_product(request):
             product.price = form_data['price']
             product.quantity = form_data['quantity']
             product.add_date = form_data['add_date']
-
             product.save()
-            message = 'Продукт изменен'
+            message = 'Товар изменен'
     else:
         form = ProductForm()
     return render(request, 'hw_2app/product_form.html', {'form': form, 'message': message})
 
 
-# def upload_img(request):
-#     if request.method == 'POST':
-#         form = ImageForm(request.POST, request.FILES)
-#         if form.is_valid():
-#             image = form.cleaned_data['image']
-#             fs = FileSystemStorage()
-#             fs.save(image.name, image)
-#
-#     else:
-#         form = ImageForm()
-#     return render(request, 'hw_2app/upload_img.html', {'form': form})
+def upload_img(request):
+    if request.method == 'POST':
+        form = ImageForm(request.POST, request.FILES)
+        if form.is_valid():
+            image = form.cleaned_data['image']
+            fs = FileSystemStorage()
+            fs.save(image.name, image)
+            
+    else:
+        form = ImageForm()
+    return render(request, 'hw_2app/upload_img.html', {'form': form})
+    
+
+def add_product(request):    
+    if request.method == 'POST':        
+        form = ProductFormForAdd(request.POST)        
+        if form.is_valid():
+            form_data = form.cleaned_data
+            Product.objects.create(name=form_data['name'],
+                                             desc=form_data['desc'],
+                                             price=form_data['price'],
+                                             quantity=form_data['quantity'],
+                                             add_date=form_data['add_date'],  
+                                             )
+            return redirect('upload_img')
+    else:
+        form = ProductFormForAdd()
+    return render(request, 'hw_2app/product_form.html', {'form': form})
+
+
+def display_product(request):
+    if request.method == 'GET':
+        products = Product.objects.all()
+        context = [
+            'title': 'Все товары',
+            'products': products,
+            ]            
+        return render(request, 'hw_2app/display_product.html', context)
+
