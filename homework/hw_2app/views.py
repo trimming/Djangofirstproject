@@ -71,7 +71,7 @@ def update_product(request):
             message = 'Товар изменен'
     else:
         form = ProductForm()
-    return render(request, 'hw_2app/product_form.html', {'form': form, 'message': message})
+    return render(request, 'hw_2app/product_form.html', {'form': form, 'message': message, 'btn_text': 'Изменить'})
 
 
 def upload_img(request):
@@ -101,7 +101,7 @@ def add_product(request):
             return redirect('upload_img')
     else:
         form = ProductFormForAdd()
-    return render(request, 'hw_2app/product_form.html', {'form': form})
+    return render(request, 'hw_2app/product_form.html', {'form': form, 'btn_text': 'Добавить'})
 
 
 def display_product(request):
