@@ -69,6 +69,7 @@ def update_product(request):
             product.add_date = form_data['add_date']
             product.save()
             message = 'Товар изменен'
+            return redirect('display_product')
     else:
         form = ProductForm()
     return render(request, 'hw_2app/product_form.html', {'form': form, 'message': message, 'btn_text': 'Изменить'})
@@ -81,7 +82,7 @@ def upload_img(request):
             image = form.cleaned_data['image']
             fs = FileSystemStorage()
             fs.save(image.name, image)
-            
+            return redirect('display_product')
     else:
         form = ImageForm()
     return render(request, 'hw_2app/upload_img.html', {'form': form})
