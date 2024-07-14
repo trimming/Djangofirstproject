@@ -15,6 +15,10 @@ class Author(models.Model):
     def __str__(self):
         return f'{self.name} {self.last_name}'
 
+    class Meta:
+        verbose_name = 'Автор'
+        verbose_name_plural = 'Авторы'
+
 
 class Article(models.Model):
     title = models.CharField(max_length=200)
@@ -27,3 +31,7 @@ class Article(models.Model):
 
     def add_view(self):
         self.views += 1
+
+    class Meta:
+        verbose_name = 'Статья'
+        verbose_name_plural = 'Статьи'
