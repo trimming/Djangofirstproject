@@ -5,7 +5,7 @@ from django.core.files.storage import FileSystemStorage
 from django.shortcuts import render, redirect
 
 from .forms import ImageForm, ProductFormForAdd, ProductForm
-from .models import Product, Client, Order
+from .models import Product, Client, Order, Image
 
 logger = logging.getLogger(__name__)
 
@@ -75,16 +75,21 @@ def update_product(request):
     return render(request, 'hw_2app/product_form.html', {'form': form, 'message': message, 'btn_text': 'Изменить'})
 
 
-def upload_img(request):
+def upload_img(request, product_id: int):
     if request.method == 'POST':
         form = ImageForm(request.POST, request.FILES)
         if form.is_valid():
-            image = form.cleaned_data['image']
+            data = form.cleaned_data
+            product = Product.objects.filter(id=product_id).first()
+            image = Image.objects.create(image=data['image'],
+                                         product=product)
+            image.save()
             fs = FileSystemStorage()
-            fs.save(image.name, image)
+            fs.save(data['image'].name, data['image'])
             return redirect('display_product')
     else:
         form = ImageForm()
+
     return render(request, 'hw_2app/upload_img.html', {'form': form})
 
 
@@ -94,13 +99,13 @@ def add_product(request):
         if form.is_valid():
             form_data = form.cleaned_data
             product = Product.objects.create(name=form_data['name'],
-                                   desc=form_data['desc'],
-                                   price=form_data['price'],
-                                   quantity=form_data['quantity'],
-                                   add_date=form_data['add_date'],
-                                   )
+                                             desc=form_data['desc'],
+                                             price=form_data['price'],
+                                             quantity=form_data['quantity'],
+                                             add_date=form_data['add_date'],
+                                             )
             product.save()
-            return redirect('upload_img')
+            return redirect('upload_img', product_id=product.id)
     else:
         form = ProductFormForAdd()
     return render(request, 'hw_2app/product_form.html', {'form': form, 'btn_text': 'Добавить'})
@@ -109,8 +114,10 @@ def add_product(request):
 def display_product(request):
     if request.method == 'GET':
         products = Product.objects.all()
+        images = Image.objects.all()
         context = {
             'title': 'Все товары',
             'products': products,
+            'images': images,
         }
         return render(request, 'hw_2app/display_product.html', context)

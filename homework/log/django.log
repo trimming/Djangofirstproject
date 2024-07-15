@@ -3163,3 +3163,1002 @@ Traceback (most recent call last):
     raise ValueError(
 ValueError: The 'image' attribute has no file associated with it.
 ERROR 2024-07-11 23:31:48,278 basehttp 10368 16672 "GET /shop/display_product/ HTTP/1.1" 500 191090
+INFO 2024-07-14 18:57:19,095 autoreload 17468 18740 Watching for file changes with StatReloader
+WARNING 2024-07-14 18:57:27,142 log 17468 15468 Not Found: /
+WARNING 2024-07-14 18:57:27,142 basehttp 17468 15468 "GET / HTTP/1.1" 404 2166
+INFO 2024-07-14 18:57:33,645 basehttp 17468 15468 "GET /shop/add_product HTTP/1.1" 301 0
+INFO 2024-07-14 18:57:33,710 basehttp 17468 19376 "GET /shop/add_product/ HTTP/1.1" 200 1513
+INFO 2024-07-14 18:58:14,264 basehttp 17468 19376 "POST /shop/add_product/ HTTP/1.1" 302 0
+INFO 2024-07-14 18:58:14,293 basehttp 17468 19376 "GET /shop/upload/ HTTP/1.1" 200 879
+INFO 2024-07-14 18:58:21,807 basehttp 17468 19376 "POST /shop/upload/ HTTP/1.1" 302 0
+ERROR 2024-07-14 18:58:21,921 log 17468 19376 Internal Server Error: /shop/display_product/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 116, in display_product
+    return render(request, 'hw_2app/display_product.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 710, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'image' attribute has no file associated with it.
+ERROR 2024-07-14 18:58:21,926 basehttp 17468 19376 "GET /shop/display_product/ HTTP/1.1" 500 192238
+INFO 2024-07-14 19:05:57,308 autoreload 17468 18740 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-14 19:05:57,736 autoreload 13860 18324 Watching for file changes with StatReloader
+INFO 2024-07-14 19:09:31,857 autoreload 13860 18324 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-14 19:09:32,368 autoreload 10012 19744 Watching for file changes with StatReloader
+ERROR 2024-07-14 19:09:38,437 log 10012 5912 Internal Server Error: /shop/display_product/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 117, in display_product
+    return render(request, 'hw_2app/display_product.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 710, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'image' attribute has no file associated with it.
+ERROR 2024-07-14 19:09:38,437 basehttp 10012 5912 "GET /shop/display_product/ HTTP/1.1" 500 192089
+INFO 2024-07-14 19:09:40,645 basehttp 10012 5912 "GET /shop/upload/ HTTP/1.1" 200 879
+INFO 2024-07-14 19:09:47,903 basehttp 10012 5912 "GET /shop/add_product/ HTTP/1.1" 200 1513
+ERROR 2024-07-14 19:10:42,585 log 10012 5912 Internal Server Error: /shop/add_product/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 96, in add_product
+    product = Product.objects.create(name=form_data['name'],
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1745, in as_sql
+    value_rows = [
+                 ^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1746, in <listcomp>
+    [
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1747, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1695, in pre_save_val
+    return field.pre_save(obj, add=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\fields\files.py", line 315, in pre_save
+    if file and not file._committed:
+                    ^^^^^^^^^^^^^^^
+AttributeError: 'HttpResponse' object has no attribute '_committed'
+ERROR 2024-07-14 19:10:42,598 basehttp 10012 5912 "POST /shop/add_product/ HTTP/1.1" 500 139080
+INFO 2024-07-14 19:12:12,620 autoreload 10012 19744 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-14 19:12:13,092 autoreload 5308 15672 Watching for file changes with StatReloader
+ERROR 2024-07-14 19:12:16,756 log 5308 7716 Internal Server Error: /shop/add_product/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 96, in add_product
+    product = Product.objects.create(name=form_data['name'],
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1745, in as_sql
+    value_rows = [
+                 ^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1746, in <listcomp>
+    [
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1747, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1695, in pre_save_val
+    return field.pre_save(obj, add=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\fields\files.py", line 315, in pre_save
+    if file and not file._committed:
+                    ^^^^^^^^^^^^^^^
+AttributeError: 'HttpResponse' object has no attribute '_committed'
+ERROR 2024-07-14 19:12:16,756 basehttp 5308 7716 "POST /shop/add_product/ HTTP/1.1" 500 139160
+INFO 2024-07-14 19:36:31,911 autoreload 5308 15672 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-14 19:36:32,676 autoreload 20988 424 Watching for file changes with StatReloader
+INFO 2024-07-14 19:46:25,455 autoreload 20988 424 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-14 19:46:25,898 autoreload 19336 12004 Watching for file changes with StatReloader
+INFO 2024-07-14 19:46:32,998 basehttp 19336 5768 "GET /shop/add_product/ HTTP/1.1" 200 1513
+ERROR 2024-07-14 19:46:57,505 log 19336 5768 Internal Server Error: /shop/add_product/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 96, in add_product
+    product = Product.objects.create(name=form_data['name'],
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1745, in as_sql
+    value_rows = [
+                 ^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1746, in <listcomp>
+    [
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1747, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1695, in pre_save_val
+    return field.pre_save(obj, add=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\fields\files.py", line 315, in pre_save
+    if file and not file._committed:
+                    ^^^^^^^^^^^^^^^
+AttributeError: 'HttpResponse' object has no attribute '_committed'
+ERROR 2024-07-14 19:46:57,514 basehttp 19336 5768 "POST /shop/add_product/ HTTP/1.1" 500 139140
+ERROR 2024-07-14 19:47:06,607 log 19336 5768 Internal Server Error: /shop/add_product/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 96, in add_product
+    product = Product.objects.create(name=form_data['name'],
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1745, in as_sql
+    value_rows = [
+                 ^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1746, in <listcomp>
+    [
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1747, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1695, in pre_save_val
+    return field.pre_save(obj, add=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\fields\files.py", line 315, in pre_save
+    if file and not file._committed:
+                    ^^^^^^^^^^^^^^^
+AttributeError: 'HttpResponse' object has no attribute '_committed'
+ERROR 2024-07-14 19:47:06,616 basehttp 19336 5768 "POST /shop/add_product/ HTTP/1.1" 500 139140
+INFO 2024-07-14 19:47:14,952 basehttp 19336 5768 "GET /shop/add_product/ HTTP/1.1" 200 1513
+INFO 2024-07-14 19:47:17,695 basehttp 19336 5768 "GET /shop/add_product/ HTTP/1.1" 200 1513
+ERROR 2024-07-14 19:47:50,579 log 19336 5768 Internal Server Error: /shop/add_product/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 96, in add_product
+    product = Product.objects.create(name=form_data['name'],
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1745, in as_sql
+    value_rows = [
+                 ^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1746, in <listcomp>
+    [
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1747, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1695, in pre_save_val
+    return field.pre_save(obj, add=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\fields\files.py", line 315, in pre_save
+    if file and not file._committed:
+                    ^^^^^^^^^^^^^^^
+AttributeError: 'HttpResponse' object has no attribute '_committed'
+ERROR 2024-07-14 19:47:50,588 basehttp 19336 5768 "POST /shop/add_product/ HTTP/1.1" 500 139140
+INFO 2024-07-15 21:52:37,679 autoreload 19336 12004 D:\GB\Django\Djangofirstproject\homework\hw_2app\models.py changed, reloading.
+INFO 2024-07-15 21:52:38,194 autoreload 4632 18212 Watching for file changes with StatReloader
+INFO 2024-07-15 21:53:01,935 autoreload 4632 18212 D:\GB\Django\Djangofirstproject\homework\hw_2app\models.py changed, reloading.
+INFO 2024-07-15 21:53:02,359 autoreload 13344 19052 Watching for file changes with StatReloader
+INFO 2024-07-15 21:53:15,887 autoreload 13344 19052 D:\GB\Django\Djangofirstproject\homework\hw_2app\models.py changed, reloading.
+INFO 2024-07-15 21:53:16,295 autoreload 11252 21220 Watching for file changes with StatReloader
+INFO 2024-07-15 21:53:21,762 autoreload 11252 21220 D:\GB\Django\Djangofirstproject\homework\hw_2app\models.py changed, reloading.
+INFO 2024-07-15 21:53:22,133 autoreload 3604 17116 Watching for file changes with StatReloader
+INFO 2024-07-15 21:53:26,404 autoreload 3604 17116 D:\GB\Django\Djangofirstproject\homework\hw_2app\models.py changed, reloading.
+INFO 2024-07-15 21:53:26,779 autoreload 15548 12180 Watching for file changes with StatReloader
+INFO 2024-07-15 21:53:36,222 autoreload 15548 12180 D:\GB\Django\Djangofirstproject\homework\hw_2app\models.py changed, reloading.
+INFO 2024-07-15 21:53:36,702 autoreload 7700 20924 Watching for file changes with StatReloader
+INFO 2024-07-15 21:53:45,061 autoreload 7700 20924 D:\GB\Django\Djangofirstproject\homework\hw_2app\models.py changed, reloading.
+INFO 2024-07-15 21:53:45,448 autoreload 5128 21428 Watching for file changes with StatReloader
+INFO 2024-07-15 21:53:53,789 autoreload 5128 21428 D:\GB\Django\Djangofirstproject\homework\hw_2app\models.py changed, reloading.
+INFO 2024-07-15 21:53:54,211 autoreload 21100 18224 Watching for file changes with StatReloader
+INFO 2024-07-15 21:54:12,868 autoreload 21100 18224 D:\GB\Django\Djangofirstproject\homework\hw_2app\models.py changed, reloading.
+INFO 2024-07-15 21:54:13,335 autoreload 16064 20772 Watching for file changes with StatReloader
+INFO 2024-07-15 22:03:45,770 autoreload 17516 20856 Watching for file changes with StatReloader
+WARNING 2024-07-15 22:03:50,306 log 17516 600 Not Found: /
+WARNING 2024-07-15 22:03:50,306 basehttp 17516 600 "GET / HTTP/1.1" 404 2166
+INFO 2024-07-15 22:04:04,734 basehttp 17516 600 "GET /shop/add_product/ HTTP/1.1" 200 1513
+ERROR 2024-07-15 22:04:36,331 log 17516 600 Internal Server Error: /shop/add_product/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 99, in add_product
+    product = Product.objects.create(name=form_data['name'],
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 659, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the reverse side of a related set is prohibited. Use image.set() instead.
+ERROR 2024-07-15 22:04:36,335 basehttp 17516 600 "POST /shop/add_product/ HTTP/1.1" 500 89862
+INFO 2024-07-15 22:05:23,518 autoreload 17516 20856 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-15 22:05:23,911 autoreload 14576 13364 Watching for file changes with StatReloader
+INFO 2024-07-15 22:05:29,694 basehttp 14576 21004 "POST /shop/add_product/ HTTP/1.1" 200 1559
+INFO 2024-07-15 22:05:32,199 basehttp 14576 21004 "POST /shop/add_product/ HTTP/1.1" 200 1559
+INFO 2024-07-15 22:11:39,188 autoreload 8748 2096 Watching for file changes with StatReloader
+ERROR 2024-07-15 22:11:55,571 log 8748 11716 Internal Server Error: /shop/add_product/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 99, in add_product
+    product = Product.objects.create(name=form_data['name'],
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1835, in execute_sql
+    self.connection.ops.fetch_returned_insert_columns(
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\base\operations.py", line 216, in fetch_returned_insert_columns
+    return cursor.fetchone()
+           ^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+ERROR 2024-07-15 22:11:55,579 basehttp 8748 11716 "POST /shop/add_product/ HTTP/1.1" 500 138119
+ERROR 2024-07-15 22:11:55,617 log 8748 4208 Internal Server Error: /shop/add_product/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 99, in add_product
+    product = Product.objects.create(name=form_data['name'],
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1835, in execute_sql
+    self.connection.ops.fetch_returned_insert_columns(
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\base\operations.py", line 216, in fetch_returned_insert_columns
+    return cursor.fetchone()
+           ^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+INFO 2024-07-15 22:11:55,622 basehttp 8748 4208 - Broken pipe from ('127.0.0.1', 53554)
+INFO 2024-07-15 22:12:08,208 basehttp 8748 11716 "POST /shop/add_product/ HTTP/1.1" 302 0
+INFO 2024-07-15 22:12:08,280 basehttp 8748 11716 "GET /shop/upload/ HTTP/1.1" 200 879
+ERROR 2024-07-15 22:12:21,225 log 8748 11716 Internal Server Error: /shop/upload/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 83, in upload_img
+    image = Image.objects.create(image=data['image'],
+                                       ~~~~^^^^^^^^^
+TypeError: 'InMemoryUploadedFile' object is not subscriptable
+ERROR 2024-07-15 22:12:21,229 basehttp 8748 11716 "POST /shop/upload/ HTTP/1.1" 500 68992
+INFO 2024-07-15 22:18:04,975 autoreload 8748 2096 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-15 22:18:05,487 autoreload 8784 6420 Watching for file changes with StatReloader
+INFO 2024-07-15 22:19:39,414 autoreload 8784 6420 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-15 22:19:40,035 autoreload 17468 13604 Watching for file changes with StatReloader
+ERROR 2024-07-15 22:19:52,680 log 17468 18116 Internal Server Error: /shop/upload/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 83, in upload_img
+    image = Image.objects.create(image=data['image'],
+                                       ~~~~^^^^^^^^^
+TypeError: 'InMemoryUploadedFile' object is not subscriptable
+ERROR 2024-07-15 22:19:52,685 basehttp 17468 18116 "POST /shop/upload/ HTTP/1.1" 500 68992
+ERROR 2024-07-15 22:19:58,524 log 17468 18116 Internal Server Error: /shop/upload/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 83, in upload_img
+    image = Image.objects.create(image=data['image'],
+                                       ~~~~^^^^^^^^^
+TypeError: 'InMemoryUploadedFile' object is not subscriptable
+ERROR 2024-07-15 22:19:58,524 basehttp 17468 18116 "POST /shop/upload/ HTTP/1.1" 500 68992
+INFO 2024-07-15 22:23:28,285 autoreload 17468 13604 D:\GB\Django\Djangofirstproject\homework\hw_2app\urls.py changed, reloading.
+INFO 2024-07-15 22:23:28,898 autoreload 1164 14516 Watching for file changes with StatReloader
+INFO 2024-07-15 22:24:01,991 autoreload 1164 14516 D:\GB\Django\Djangofirstproject\homework\hw_2app\urls.py changed, reloading.
+INFO 2024-07-15 22:24:02,572 autoreload 17404 18492 Watching for file changes with StatReloader
+INFO 2024-07-15 22:25:15,815 autoreload 17404 18492 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-15 22:25:16,258 autoreload 11376 19428 Watching for file changes with StatReloader
+WARNING 2024-07-15 22:25:25,542 log 11376 18804 Not Found: /shop/upload/
+WARNING 2024-07-15 22:25:25,542 basehttp 11376 18804 "GET /shop/upload/ HTTP/1.1" 404 3460
+INFO 2024-07-15 22:25:40,224 basehttp 11376 18804 "GET /shop/add_product/ HTTP/1.1" 200 1513
+ERROR 2024-07-15 22:27:13,148 log 11376 18804 Internal Server Error: /shop/add_product/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 99, in add_product
+    product = Product.objects.create(name=form_data['name'],
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1835, in execute_sql
+    self.connection.ops.fetch_returned_insert_columns(
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\base\operations.py", line 216, in fetch_returned_insert_columns
+    return cursor.fetchone()
+           ^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+ERROR 2024-07-15 22:27:13,160 basehttp 11376 18804 "POST /shop/add_product/ HTTP/1.1" 500 138295
+INFO 2024-07-15 22:27:26,027 basehttp 11376 18804 "POST /shop/add_product/ HTTP/1.1" 302 0
+INFO 2024-07-15 22:27:26,035 basehttp 11376 18804 "GET /shop/upload/17 HTTP/1.1" 200 879
+ERROR 2024-07-15 22:27:34,421 log 11376 18804 Internal Server Error: /shop/upload/17
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 83, in upload_img
+    image = Image.objects.create(image=data['image'],
+                                       ~~~~^^^^^^^^^
+TypeError: 'InMemoryUploadedFile' object is not subscriptable
+ERROR 2024-07-15 22:27:34,421 basehttp 11376 18804 "POST /shop/upload/17 HTTP/1.1" 500 69214
+INFO 2024-07-15 22:28:22,476 autoreload 11376 19428 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-15 22:28:23,005 autoreload 4688 3980 Watching for file changes with StatReloader
+INFO 2024-07-15 22:38:49,907 basehttp 4688 8332 "GET /shop/upload/17 HTTP/1.1" 200 879
+ERROR 2024-07-15 22:39:03,672 log 4688 8332 Internal Server Error: /shop/upload/17
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 83, in upload_img
+    image = Image.objects.create(image=data['image'],
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 543, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 284, in __set__
+    raise ValueError(
+ValueError: Cannot assign "17": "Image.product" must be a "Product" instance.
+ERROR 2024-07-15 22:39:03,688 basehttp 4688 8332 "POST /shop/upload/17 HTTP/1.1" 500 88029
+INFO 2024-07-15 22:43:05,054 autoreload 4688 3980 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-15 22:43:05,515 autoreload 18656 12468 Watching for file changes with StatReloader
+ERROR 2024-07-15 22:43:18,564 log 18656 10468 Internal Server Error: /shop/upload/17
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 84, in upload_img
+    image = Image.objects.create(image=data['image'],
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1835, in execute_sql
+    self.connection.ops.fetch_returned_insert_columns(
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\backends\base\operations.py", line 216, in fetch_returned_insert_columns
+    return cursor.fetchone()
+           ^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+ERROR 2024-07-15 22:43:18,572 basehttp 18656 10468 "POST /shop/upload/17 HTTP/1.1" 500 136154
+INFO 2024-07-15 22:43:28,322 basehttp 18656 10468 "POST /shop/upload/17 HTTP/1.1" 200 879
+INFO 2024-07-15 22:43:34,073 basehttp 18656 10468 "POST /shop/upload/17 HTTP/1.1" 200 879
+INFO 2024-07-15 22:50:27,085 autoreload 18656 12468 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-15 22:50:27,495 autoreload 12880 9116 Watching for file changes with StatReloader
+INFO 2024-07-15 22:51:00,977 basehttp 12880 12236 "GET /shop/display_product HTTP/1.1" 301 0
+INFO 2024-07-15 22:51:01,026 basehttp 12880 5208 "GET /shop/display_product/ HTTP/1.1" 200 4372
+INFO 2024-07-15 22:55:33,106 autoreload 12880 9116 D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py changed, reloading.
+INFO 2024-07-15 22:55:33,544 autoreload 508 20600 Watching for file changes with StatReloader
+INFO 2024-07-15 22:55:38,268 basehttp 508 13176 "GET /shop/display_product/ HTTP/1.1" 200 3991
+WARNING 2024-07-15 22:55:38,307 log 508 17880 Not Found: /shop/display_product/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg
+WARNING 2024-07-15 22:55:38,307 log 508 13176 Not Found: /shop/display_product/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg
+WARNING 2024-07-15 22:55:38,315 basehttp 508 17880 "GET /shop/display_product/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg HTTP/1.1" 404 3616
+WARNING 2024-07-15 22:55:38,315 basehttp 508 13176 "GET /shop/display_product/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg HTTP/1.1" 404 3616
+INFO 2024-07-15 22:58:21,799 basehttp 508 13176 "GET /shop/display_product/ HTTP/1.1" 200 3991
+WARNING 2024-07-15 22:58:21,835 log 508 17880 Not Found: /shop/display_product/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg
+WARNING 2024-07-15 22:58:21,839 log 508 13176 Not Found: /shop/display_product/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg
+WARNING 2024-07-15 22:58:21,839 basehttp 508 17880 "GET /shop/display_product/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg HTTP/1.1" 404 3616
+WARNING 2024-07-15 22:58:21,839 basehttp 508 13176 "GET /shop/display_product/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg HTTP/1.1" 404 3616
+INFO 2024-07-15 22:59:24,299 autoreload 19720 17044 Watching for file changes with StatReloader
+WARNING 2024-07-15 22:59:26,358 log 19720 8108 Not Found: /
+WARNING 2024-07-15 22:59:26,358 basehttp 19720 8108 "GET / HTTP/1.1" 404 2166
+INFO 2024-07-15 22:59:31,974 basehttp 19720 8108 "GET /shop/add_product/ HTTP/1.1" 200 1513
+INFO 2024-07-15 22:59:37,086 basehttp 19720 8108 "GET /shop/display_product/ HTTP/1.1" 200 3991
+WARNING 2024-07-15 22:59:37,117 log 19720 8108 Not Found: /shop/display_product/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg
+WARNING 2024-07-15 22:59:37,117 log 19720 12776 Not Found: /shop/display_product/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg
+WARNING 2024-07-15 22:59:37,117 basehttp 19720 12776 "GET /shop/display_product/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg HTTP/1.1" 404 3616
+WARNING 2024-07-15 22:59:37,117 basehttp 19720 8108 "GET /shop/display_product/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg HTTP/1.1" 404 3616
+ERROR 2024-07-15 23:03:46,065 log 19720 12776 Internal Server Error: /shop/display_product/
+Traceback (most recent call last):
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\homework\hw_2app\views.py", line 123, in display_product
+    return render(request, 'hw_2app/display_product.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\defaulttags.py", line 961, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Django\Djangofirstproject\venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' item.image' from 'url item.image'
+ERROR 2024-07-15 23:03:46,065 basehttp 19720 12776 "GET /shop/display_product/ HTTP/1.1" 500 227101
+INFO 2024-07-15 23:04:13,607 basehttp 19720 12776 "GET /shop/display_product/ HTTP/1.1" 200 4005
+WARNING 2024-07-15 23:04:13,636 log 19720 8108 Not Found: /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg
+WARNING 2024-07-15 23:04:13,638 log 19720 12776 Not Found: /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg
+WARNING 2024-07-15 23:04:13,639 basehttp 19720 8108 "GET /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg HTTP/1.1" 404 2331
+WARNING 2024-07-15 23:04:13,639 basehttp 19720 12776 "GET /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg HTTP/1.1" 404 2331
+INFO 2024-07-15 23:04:45,173 basehttp 19720 12776 "GET /shop/display_product/ HTTP/1.1" 200 4005
+WARNING 2024-07-15 23:04:45,190 log 19720 12776 Not Found: /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg
+WARNING 2024-07-15 23:04:45,194 basehttp 19720 12776 "GET /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg HTTP/1.1" 404 2331
+WARNING 2024-07-15 23:04:45,194 log 19720 8108 Not Found: /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg
+WARNING 2024-07-15 23:04:45,195 basehttp 19720 8108 "GET /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg HTTP/1.1" 404 2331
+INFO 2024-07-15 23:05:08,584 autoreload 3904 7596 Watching for file changes with StatReloader
+INFO 2024-07-15 23:05:15,558 basehttp 3904 7472 "GET /shop/display_product/ HTTP/1.1" 200 4005
+WARNING 2024-07-15 23:05:15,581 log 3904 14264 Not Found: /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg
+WARNING 2024-07-15 23:05:15,584 log 3904 7472 Not Found: /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg
+WARNING 2024-07-15 23:05:15,586 basehttp 3904 14264 "GET /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg HTTP/1.1" 404 2331
+WARNING 2024-07-15 23:05:15,586 basehttp 3904 7472 "GET /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg HTTP/1.1" 404 2331
+INFO 2024-07-15 23:10:08,201 basehttp 3904 7472 "GET /shop/add_product/ HTTP/1.1" 200 1513
+INFO 2024-07-15 23:10:39,213 basehttp 3904 7472 "POST /shop/add_product/ HTTP/1.1" 302 0
+INFO 2024-07-15 23:10:39,221 basehttp 3904 7472 "GET /shop/upload/18 HTTP/1.1" 200 879
+INFO 2024-07-15 23:10:53,876 basehttp 3904 7472 "POST /shop/upload/18 HTTP/1.1" 302 0
+INFO 2024-07-15 23:10:53,886 basehttp 3904 7472 "GET /shop/display_product/ HTTP/1.1" 200 4623
+WARNING 2024-07-15 23:10:53,908 log 3904 7472 Not Found: /media/media/IMG-20230920-WA0013.jpg
+WARNING 2024-07-15 23:10:53,913 basehttp 3904 7472 "GET /media/media/IMG-20230920-WA0013.jpg HTTP/1.1" 404 2289
+WARNING 2024-07-15 23:10:53,921 log 3904 1760 Not Found: /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg
+WARNING 2024-07-15 23:10:53,921 log 3904 15908 Not Found: /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg
+WARNING 2024-07-15 23:10:53,921 basehttp 3904 1760 "GET /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg HTTP/1.1" 404 2331
+WARNING 2024-07-15 23:10:53,921 basehttp 3904 15908 "GET /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg HTTP/1.1" 404 2331
+INFO 2024-07-15 23:18:48,155 autoreload 3904 7596 D:\GB\Django\Djangofirstproject\homework\homework\settings.py changed, reloading.
+INFO 2024-07-15 23:18:48,561 autoreload 12464 21192 Watching for file changes with StatReloader
+WARNING 2024-07-15 23:18:51,963 log 12464 16296 Not Found: /
+WARNING 2024-07-15 23:18:51,963 basehttp 12464 16296 "GET / HTTP/1.1" 404 2166
+INFO 2024-07-15 23:18:59,870 basehttp 12464 16296 "GET /shop/add_product/ HTTP/1.1" 200 1513
+INFO 2024-07-15 23:19:05,237 basehttp 12464 16296 "GET /shop/display_product/ HTTP/1.1" 200 4623
+WARNING 2024-07-15 23:19:05,276 log 12464 2660 Not Found: /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg
+WARNING 2024-07-15 23:19:05,276 log 12464 16296 Not Found: /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg
+WARNING 2024-07-15 23:19:05,276 log 12464 21396 Not Found: /media/media/IMG-20230920-WA0013.jpg
+WARNING 2024-07-15 23:19:05,276 basehttp 12464 2660 "GET /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg HTTP/1.1" 404 2331
+WARNING 2024-07-15 23:19:05,276 basehttp 12464 16296 "GET /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg HTTP/1.1" 404 2331
+WARNING 2024-07-15 23:19:05,276 basehttp 12464 21396 "GET /media/media/IMG-20230920-WA0013.jpg HTTP/1.1" 404 2289
+INFO 2024-07-15 23:20:41,428 autoreload 12464 21192 D:\GB\Django\Djangofirstproject\homework\homework\settings.py changed, reloading.
+INFO 2024-07-15 23:20:41,950 autoreload 18576 21272 Watching for file changes with StatReloader
