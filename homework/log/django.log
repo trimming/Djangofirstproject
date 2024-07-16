@@ -4374,3 +4374,264 @@ WARNING 2024-07-16 22:47:42,101 basehttp 16572 15352 "GET /media/hw_2app/%D0%A1%
 WARNING 2024-07-16 22:47:42,101 basehttp 16572 21120 "GET /media/media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-10_162740.png HTTP/1.1" 404 2409
 INFO 2024-07-16 22:51:59,540 autoreload 16572 19400 D:\GB\Django\Djangofirstproject\homework\hw_2app\models.py changed, reloading.
 INFO 2024-07-16 22:51:59,855 autoreload 19776 14232 Watching for file changes with StatReloader
+INFO 2024-07-16 22:57:48,104 autoreload 13300 2728 Watching for file changes with StatReloader
+INFO 2024-07-16 22:58:03,485 autoreload 13300 2728 D:\GB\Django\Djangofirstproject\homework\homework\settings.py changed, reloading.
+INFO 2024-07-16 22:58:03,778 autoreload 18508 2708 Watching for file changes with StatReloader
+INFO 2024-07-16 22:58:18,127 autoreload 18508 2708 D:\GB\Django\Djangofirstproject\homework\homework\settings.py changed, reloading.
+INFO 2024-07-16 22:58:18,432 autoreload 6988 7684 Watching for file changes with StatReloader
+INFO 2024-07-16 22:58:27,996 basehttp 6988 22288 "GET /shop/display_product/ HTTP/1.1" 200 7188
+WARNING 2024-07-16 22:58:28,098 log 6988 21716 Not Found: /media/hw_2app/uploads/LostArk_sample.jpg
+WARNING 2024-07-16 22:58:28,101 basehttp 6988 21716 "GET /media/hw_2app/uploads/LostArk_sample.jpg HTTP/1.1" 404 2304
+WARNING 2024-07-16 22:58:28,101 log 6988 20908 Not Found: /media/hw_2app/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg
+WARNING 2024-07-16 22:58:28,104 log 6988 20664 Not Found: /media/hw_2app/hw_2app/Снимок_экрана_2024-03-03_223209.png
+WARNING 2024-07-16 22:58:28,104 log 6988 868 Not Found: /media/hw_2app/media/Снимок_экрана_2024-03-10_162740.png
+WARNING 2024-07-16 22:58:28,104 log 6988 22288 Not Found: /media/hw_2app/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg
+WARNING 2024-07-16 22:58:28,104 basehttp 6988 20908 "GET /media/hw_2app/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg HTTP/1.1" 404 2355
+WARNING 2024-07-16 22:58:28,104 log 6988 9040 Not Found: /media/hw_2app/media/IMG-20230920-WA0013.jpg
+WARNING 2024-07-16 22:58:28,104 basehttp 6988 20664 "GET /media/hw_2app/hw_2app/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-03_223209.png HTTP/1.1" 404 2439
+WARNING 2024-07-16 22:58:28,104 basehttp 6988 868 "GET /media/hw_2app/media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-10_162740.png HTTP/1.1" 404 2433
+WARNING 2024-07-16 22:58:28,104 basehttp 6988 22288 "GET /media/hw_2app/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg HTTP/1.1" 404 2355
+WARNING 2024-07-16 22:58:28,104 basehttp 6988 9040 "GET /media/hw_2app/media/IMG-20230920-WA0013.jpg HTTP/1.1" 404 2313
+INFO 2024-07-16 22:58:34,757 basehttp 6988 9040 "GET /shop/display_product/ HTTP/1.1" 200 7188
+WARNING 2024-07-16 22:58:34,809 log 6988 21716 Not Found: /media/hw_2app/media/Снимок_экрана_2024-03-10_162740.png
+WARNING 2024-07-16 22:58:34,811 log 6988 20664 Not Found: /media/hw_2app/hw_2app/Снимок_экрана_2024-03-03_223209.png
+WARNING 2024-07-16 22:58:34,813 log 6988 9040 Not Found: /media/hw_2app/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg
+WARNING 2024-07-16 22:58:34,815 log 6988 22288 Not Found: /media/hw_2app/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg
+WARNING 2024-07-16 22:58:34,817 basehttp 6988 21716 "GET /media/hw_2app/media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-10_162740.png HTTP/1.1" 404 2433
+WARNING 2024-07-16 22:58:34,819 log 6988 20908 Not Found: /media/hw_2app/uploads/LostArk_sample.jpg
+WARNING 2024-07-16 22:58:34,819 basehttp 6988 20664 "GET /media/hw_2app/hw_2app/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-03_223209.png HTTP/1.1" 404 2439
+WARNING 2024-07-16 22:58:34,820 basehttp 6988 9040 "GET /media/hw_2app/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg HTTP/1.1" 404 2355
+WARNING 2024-07-16 22:58:34,822 log 6988 868 Not Found: /media/hw_2app/media/IMG-20230920-WA0013.jpg
+WARNING 2024-07-16 22:58:34,823 basehttp 6988 22288 "GET /media/hw_2app/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg HTTP/1.1" 404 2355
+WARNING 2024-07-16 22:58:34,823 basehttp 6988 20908 "GET /media/hw_2app/uploads/LostArk_sample.jpg HTTP/1.1" 404 2304
+WARNING 2024-07-16 22:58:34,823 basehttp 6988 868 "GET /media/hw_2app/media/IMG-20230920-WA0013.jpg HTTP/1.1" 404 2313
+INFO 2024-07-16 22:59:09,929 autoreload 6988 7684 D:\GB\Django\Djangofirstproject\homework\homework\settings.py changed, reloading.
+INFO 2024-07-16 22:59:10,231 autoreload 7224 2600 Watching for file changes with StatReloader
+INFO 2024-07-16 22:59:36,790 autoreload 7224 2600 D:\GB\Django\Djangofirstproject\homework\homework\settings.py changed, reloading.
+INFO 2024-07-16 22:59:37,090 autoreload 3952 2564 Watching for file changes with StatReloader
+INFO 2024-07-16 22:59:40,485 basehttp 3952 18076 "GET /shop/display_product/ HTTP/1.1" 200 7140
+WARNING 2024-07-16 22:59:40,522 log 3952 5168 Not Found: /media/uploads/LostArk_sample.jpg
+WARNING 2024-07-16 22:59:40,524 log 3952 14820 Not Found: /media/media/IMG-20230920-WA0013.jpg
+WARNING 2024-07-16 22:59:40,525 log 3952 19184 Not Found: /media/hw_2app/Снимок_экрана_2024-03-03_223209.png
+WARNING 2024-07-16 22:59:40,525 log 3952 18076 Not Found: /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg
+WARNING 2024-07-16 22:59:40,526 log 3952 19700 Not Found: /media/media/Снимок_экрана_2024-03-10_162740.png
+WARNING 2024-07-16 22:59:40,526 basehttp 3952 5168 "GET /media/uploads/LostArk_sample.jpg HTTP/1.1" 404 2280
+WARNING 2024-07-16 22:59:40,526 basehttp 3952 14820 "GET /media/media/IMG-20230920-WA0013.jpg HTTP/1.1" 404 2289
+WARNING 2024-07-16 22:59:40,527 log 3952 11932 Not Found: /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg
+WARNING 2024-07-16 22:59:40,527 basehttp 3952 19184 "GET /media/hw_2app/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-03_223209.png HTTP/1.1" 404 2415
+WARNING 2024-07-16 22:59:40,527 basehttp 3952 18076 "GET /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg HTTP/1.1" 404 2331
+WARNING 2024-07-16 22:59:40,528 basehttp 3952 19700 "GET /media/media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-10_162740.png HTTP/1.1" 404 2409
+WARNING 2024-07-16 22:59:40,528 basehttp 3952 11932 "GET /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg HTTP/1.1" 404 2331
+INFO 2024-07-16 23:00:34,264 autoreload 3952 2564 D:\GB\Django\Djangofirstproject\homework\homework\settings.py changed, reloading.
+INFO 2024-07-16 23:00:34,568 autoreload 3724 8824 Watching for file changes with StatReloader
+INFO 2024-07-16 23:04:56,354 autoreload 3724 8824 D:\GB\Django\Djangofirstproject\homework\hw_2app\models.py changed, reloading.
+INFO 2024-07-16 23:04:56,644 autoreload 22228 19144 Watching for file changes with StatReloader
+INFO 2024-07-16 23:05:13,772 autoreload 5956 22108 Watching for file changes with StatReloader
+INFO 2024-07-16 23:05:21,655 basehttp 5956 7696 "GET /shop/display_product/ HTTP/1.1" 200 7140
+WARNING 2024-07-16 23:05:21,687 log 5956 16068 Not Found: /media/hw_2app/Снимок_экрана_2024-03-03_223209.png
+WARNING 2024-07-16 23:05:21,687 log 5956 7696 Not Found: /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg
+WARNING 2024-07-16 23:05:21,687 log 5956 20172 Not Found: /media/media/IMG-20230920-WA0013.jpg
+WARNING 2024-07-16 23:05:21,687 log 5956 22192 Not Found: /media/media/Снимок_экрана_2024-03-10_162740.png
+WARNING 2024-07-16 23:05:21,690 log 5956 9416 Not Found: /media/uploads/LostArk_sample.jpg
+WARNING 2024-07-16 23:05:21,690 basehttp 5956 16068 "GET /media/hw_2app/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-03_223209.png HTTP/1.1" 404 2415
+WARNING 2024-07-16 23:05:21,691 log 5956 16188 Not Found: /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg
+WARNING 2024-07-16 23:05:21,691 basehttp 5956 7696 "GET /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg HTTP/1.1" 404 2331
+WARNING 2024-07-16 23:05:21,691 basehttp 5956 22192 "GET /media/media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-10_162740.png HTTP/1.1" 404 2409
+WARNING 2024-07-16 23:05:21,691 basehttp 5956 9416 "GET /media/uploads/LostArk_sample.jpg HTTP/1.1" 404 2280
+WARNING 2024-07-16 23:05:21,691 basehttp 5956 20172 "GET /media/media/IMG-20230920-WA0013.jpg HTTP/1.1" 404 2289
+WARNING 2024-07-16 23:05:21,692 basehttp 5956 16188 "GET /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg HTTP/1.1" 404 2331
+INFO 2024-07-16 23:05:48,219 basehttp 5956 16188 "GET /shop/add_product/ HTTP/1.1" 200 1513
+INFO 2024-07-16 23:06:16,381 basehttp 5956 16188 "POST /shop/add_product/ HTTP/1.1" 302 0
+INFO 2024-07-16 23:06:16,393 basehttp 5956 16188 "GET /shop/upload/23 HTTP/1.1" 200 879
+INFO 2024-07-16 23:06:23,396 basehttp 5956 16188 "POST /shop/upload/23 HTTP/1.1" 302 0
+INFO 2024-07-16 23:06:23,406 basehttp 5956 16188 "GET /shop/display_product/ HTTP/1.1" 200 7948
+WARNING 2024-07-16 23:06:23,460 log 5956 7696 Not Found: /media/uploads/LostArk_sample.jpg
+WARNING 2024-07-16 23:06:23,466 log 5956 16188 Not Found: /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg
+WARNING 2024-07-16 23:06:23,468 log 5956 22192 Not Found: /media/media/IMG-20230920-WA0013.jpg
+WARNING 2024-07-16 23:06:23,469 basehttp 5956 7696 "GET /media/uploads/LostArk_sample.jpg HTTP/1.1" 404 2280
+WARNING 2024-07-16 23:06:23,469 basehttp 5956 16188 "GET /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg HTTP/1.1" 404 2331
+WARNING 2024-07-16 23:06:23,472 log 5956 20172 Not Found: /media/hw_2app/Снимок_экрана_2024-03-03_223209.png
+WARNING 2024-07-16 23:06:23,473 log 5956 9416 Not Found: /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg
+WARNING 2024-07-16 23:06:23,475 log 5956 16068 Not Found: /media/media/Снимок_экрана_2024-03-10_162740.png
+WARNING 2024-07-16 23:06:23,475 basehttp 5956 22192 "GET /media/media/IMG-20230920-WA0013.jpg HTTP/1.1" 404 2289
+WARNING 2024-07-16 23:06:23,475 basehttp 5956 20172 "GET /media/hw_2app/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-03_223209.png HTTP/1.1" 404 2415
+WARNING 2024-07-16 23:06:23,475 basehttp 5956 16068 "GET /media/media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-10_162740.png HTTP/1.1" 404 2409
+WARNING 2024-07-16 23:06:23,475 basehttp 5956 9416 "GET /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg HTTP/1.1" 404 2331
+WARNING 2024-07-16 23:06:23,489 log 5956 7696 Not Found: /media/Снимок_экрана_2024-03-03_213226.png
+WARNING 2024-07-16 23:06:23,491 basehttp 5956 7696 "GET /media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-03_213226.png HTTP/1.1" 404 2391
+INFO 2024-07-16 23:16:42,847 autoreload 5956 22108 D:\GB\Django\Djangofirstproject\homework\homework\settings.py changed, reloading.
+INFO 2024-07-16 23:16:43,209 autoreload 2288 21700 Watching for file changes with StatReloader
+INFO 2024-07-16 23:16:57,580 autoreload 2288 21700 D:\GB\Django\Djangofirstproject\homework\hw_2app\models.py changed, reloading.
+INFO 2024-07-16 23:16:57,882 autoreload 19608 600 Watching for file changes with StatReloader
+INFO 2024-07-16 23:17:06,302 basehttp 19608 8244 "GET /shop/display_product/ HTTP/1.1" 200 7948
+WARNING 2024-07-16 23:17:06,450 log 19608 13520 Not Found: /media/uploads/LostArk_sample.jpg
+WARNING 2024-07-16 23:17:06,450 basehttp 19608 13520 "GET /media/uploads/LostArk_sample.jpg HTTP/1.1" 404 2280
+WARNING 2024-07-16 23:17:06,461 log 19608 2180 Not Found: /media/media/Снимок_экрана_2024-03-10_162740.png
+WARNING 2024-07-16 23:17:06,461 log 19608 8624 Not Found: /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg
+WARNING 2024-07-16 23:17:06,461 log 19608 8244 Not Found: /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg
+WARNING 2024-07-16 23:17:06,467 log 19608 8156 Not Found: /media/media/IMG-20230920-WA0013.jpg
+WARNING 2024-07-16 23:17:06,474 log 19608 18696 Not Found: /media/hw_2app/Снимок_экрана_2024-03-03_223209.png
+WARNING 2024-07-16 23:17:06,474 basehttp 19608 8624 "GET /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg HTTP/1.1" 404 2331
+WARNING 2024-07-16 23:17:06,474 basehttp 19608 2180 "GET /media/media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-10_162740.png HTTP/1.1" 404 2409
+WARNING 2024-07-16 23:17:06,474 basehttp 19608 8244 "GET /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg HTTP/1.1" 404 2331
+WARNING 2024-07-16 23:17:06,474 basehttp 19608 8156 "GET /media/media/IMG-20230920-WA0013.jpg HTTP/1.1" 404 2289
+WARNING 2024-07-16 23:17:06,474 basehttp 19608 18696 "GET /media/hw_2app/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-03_223209.png HTTP/1.1" 404 2415
+WARNING 2024-07-16 23:17:06,485 log 19608 13520 Not Found: /media/Снимок_экрана_2024-03-03_213226.png
+WARNING 2024-07-16 23:17:06,485 basehttp 19608 13520 "GET /media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-03_213226.png HTTP/1.1" 404 2391
+INFO 2024-07-16 23:19:47,278 autoreload 19608 600 D:\GB\Django\Djangofirstproject\homework\hw_2app\models.py changed, reloading.
+INFO 2024-07-16 23:19:47,617 autoreload 7852 22412 Watching for file changes with StatReloader
+INFO 2024-07-16 23:20:45,226 autoreload 18968 18644 Watching for file changes with StatReloader
+INFO 2024-07-16 23:20:49,094 basehttp 18968 12756 "GET /shop/add_product/ HTTP/1.1" 200 1513
+INFO 2024-07-16 23:21:34,526 basehttp 18968 12756 "POST /shop/add_product/ HTTP/1.1" 200 1694
+INFO 2024-07-16 23:21:48,826 basehttp 18968 12756 "POST /shop/add_product/ HTTP/1.1" 302 0
+INFO 2024-07-16 23:21:48,842 basehttp 18968 12756 "GET /shop/upload/24 HTTP/1.1" 200 879
+INFO 2024-07-16 23:21:54,881 basehttp 18968 12756 "POST /shop/upload/24 HTTP/1.1" 302 0
+INFO 2024-07-16 23:21:54,892 basehttp 18968 12756 "GET /shop/display_product/ HTTP/1.1" 200 8789
+WARNING 2024-07-16 23:21:54,976 log 18968 4840 Not Found: /media/media/IMG-20230920-WA0013.jpg
+WARNING 2024-07-16 23:21:54,976 log 18968 7100 Not Found: /media/hw_2app/Снимок_экрана_2024-03-03_223209.png
+WARNING 2024-07-16 23:21:54,976 log 18968 8796 Not Found: /media/media/Снимок_экрана_2024-03-10_162740.png
+WARNING 2024-07-16 23:21:54,976 basehttp 18968 4840 "GET /media/media/IMG-20230920-WA0013.jpg HTTP/1.1" 404 2289
+WARNING 2024-07-16 23:21:54,985 log 18968 12756 Not Found: /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg
+WARNING 2024-07-16 23:21:54,986 log 18968 21892 Not Found: /media/uploads/LostArk_sample.jpg
+WARNING 2024-07-16 23:21:54,986 basehttp 18968 7100 "GET /media/hw_2app/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-03_223209.png HTTP/1.1" 404 2415
+WARNING 2024-07-16 23:21:54,991 log 18968 1400 Not Found: /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg
+WARNING 2024-07-16 23:21:54,993 basehttp 18968 12756 "GET /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg HTTP/1.1" 404 2331
+WARNING 2024-07-16 23:21:54,993 basehttp 18968 21892 "GET /media/uploads/LostArk_sample.jpg HTTP/1.1" 404 2280
+WARNING 2024-07-16 23:21:54,993 basehttp 18968 8796 "GET /media/media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-10_162740.png HTTP/1.1" 404 2409
+WARNING 2024-07-16 23:21:55,000 basehttp 18968 1400 "GET /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg HTTP/1.1" 404 2331
+WARNING 2024-07-16 23:21:55,009 log 18968 4840 Not Found: /media/Снимок_экрана_2024-03-03_213226.png
+WARNING 2024-07-16 23:21:55,009 basehttp 18968 4840 "GET /media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-03_213226.png HTTP/1.1" 404 2391
+WARNING 2024-07-16 23:21:55,009 log 18968 7100 Not Found: /media/Снимок_экрана_2024-03-10_171830.png
+WARNING 2024-07-16 23:21:55,009 basehttp 18968 7100 "GET /media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-10_171830.png HTTP/1.1" 404 2391
+INFO 2024-07-16 23:27:45,641 basehttp 18968 4432 "GET /shop/display_product/ HTTP/1.1" 200 8758
+WARNING 2024-07-16 23:27:45,655 log 18968 4432 Not Found: /shop/display_product/homework/media/hw_2app/Снимок_экрана_2024-03-03_223209.png
+WARNING 2024-07-16 23:27:45,663 basehttp 18968 4432 "GET /shop/display_product/homework/media/hw_2app/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-03_223209.png HTTP/1.1" 404 3745
+INFO 2024-07-16 23:28:13,958 basehttp 18968 4432 "GET /shop/display_product/ HTTP/1.1" 200 8758
+WARNING 2024-07-16 23:28:13,966 log 18968 4432 Not Found: /shop/display_product/homework/media/hw_2app/Снимок_экрана_2024-03-03_223209.png
+WARNING 2024-07-16 23:28:13,967 basehttp 18968 4432 "GET /shop/display_product/homework/media/hw_2app/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-03_223209.png HTTP/1.1" 404 3745
+INFO 2024-07-16 23:28:41,465 autoreload 21956 19884 Watching for file changes with StatReloader
+INFO 2024-07-16 23:28:46,662 basehttp 21956 7308 "GET /shop/display_product/ HTTP/1.1" 200 8758
+WARNING 2024-07-16 23:28:46,668 log 21956 7308 Not Found: /shop/display_product/homework/media/hw_2app/Снимок_экрана_2024-03-03_223209.png
+WARNING 2024-07-16 23:28:46,668 basehttp 21956 7308 "GET /shop/display_product/homework/media/hw_2app/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-03_223209.png HTTP/1.1" 404 3745
+INFO 2024-07-16 23:33:09,859 basehttp 21956 7308 "GET /shop/display_product/ HTTP/1.1" 200 8758
+WARNING 2024-07-16 23:33:09,885 log 21956 7308 Not Found: /shop/display_product/homework/media/hw_2app/Снимок_экрана_2024-03-03_223209.png
+WARNING 2024-07-16 23:33:09,886 basehttp 21956 7308 "GET /shop/display_product/homework/media/hw_2app/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-03_223209.png HTTP/1.1" 404 3745
+INFO 2024-07-16 23:34:00,952 basehttp 21956 7308 "GET /shop/display_product/ HTTP/1.1" 200 8789
+WARNING 2024-07-16 23:34:00,970 log 21956 7308 Not Found: /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg
+WARNING 2024-07-16 23:34:00,970 log 21956 16620 Not Found: /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg
+WARNING 2024-07-16 23:34:00,970 log 21956 8608 Not Found: /media/media/IMG-20230920-WA0013.jpg
+WARNING 2024-07-16 23:34:00,970 basehttp 21956 7308 "GET /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg HTTP/1.1" 404 2331
+WARNING 2024-07-16 23:34:00,970 basehttp 21956 16620 "GET /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg HTTP/1.1" 404 2331
+WARNING 2024-07-16 23:34:00,970 basehttp 21956 8608 "GET /media/media/IMG-20230920-WA0013.jpg HTTP/1.1" 404 2289
+WARNING 2024-07-16 23:34:00,970 log 21956 16244 Not Found: /media/hw_2app/Снимок_экрана_2024-03-03_223209.png
+WARNING 2024-07-16 23:34:00,970 log 21956 19636 Not Found: /media/uploads/LostArk_sample.jpg
+WARNING 2024-07-16 23:34:00,970 log 21956 8424 Not Found: /media/media/Снимок_экрана_2024-03-10_162740.png
+WARNING 2024-07-16 23:34:00,984 basehttp 21956 16244 "GET /media/hw_2app/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-03_223209.png HTTP/1.1" 404 2415
+WARNING 2024-07-16 23:34:00,985 basehttp 21956 8424 "GET /media/media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-10_162740.png HTTP/1.1" 404 2409
+WARNING 2024-07-16 23:34:00,985 basehttp 21956 19636 "GET /media/uploads/LostArk_sample.jpg HTTP/1.1" 404 2280
+WARNING 2024-07-16 23:34:00,985 log 21956 8608 Not Found: /media/Снимок_экрана_2024-03-03_213226.png
+WARNING 2024-07-16 23:34:00,985 log 21956 7308 Not Found: /media/Снимок_экрана_2024-03-10_171830.png
+WARNING 2024-07-16 23:34:00,985 basehttp 21956 8608 "GET /media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-03_213226.png HTTP/1.1" 404 2391
+WARNING 2024-07-16 23:34:00,985 basehttp 21956 7308 "GET /media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-10_171830.png HTTP/1.1" 404 2391
+INFO 2024-07-16 23:37:15,323 autoreload 21956 19884 D:\GB\Django\Djangofirstproject\homework\hw_2app\models.py changed, reloading.
+INFO 2024-07-16 23:37:15,632 autoreload 7456 15108 Watching for file changes with StatReloader
+INFO 2024-07-16 23:37:28,285 autoreload 4836 4664 Watching for file changes with StatReloader
+INFO 2024-07-16 23:37:42,227 basehttp 4836 18404 "GET /shop/display_product/ HTTP/1.1" 200 8789
+WARNING 2024-07-16 23:37:42,311 log 4836 9836 Not Found: /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg
+WARNING 2024-07-16 23:37:42,311 basehttp 4836 9836 "GET /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg HTTP/1.1" 404 2331
+WARNING 2024-07-16 23:37:42,322 log 4836 18404 Not Found: /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg
+WARNING 2024-07-16 23:37:42,322 log 4836 18400 Not Found: /media/uploads/LostArk_sample.jpg
+WARNING 2024-07-16 23:37:42,326 basehttp 4836 18404 "GET /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg HTTP/1.1" 404 2331
+WARNING 2024-07-16 23:37:42,329 log 4836 1640 Not Found: /media/hw_2app/Снимок_экрана_2024-03-03_223209.png
+WARNING 2024-07-16 23:37:42,329 log 4836 10628 Not Found: /media/media/Снимок_экрана_2024-03-10_162740.png
+WARNING 2024-07-16 23:37:42,329 basehttp 4836 18400 "GET /media/uploads/LostArk_sample.jpg HTTP/1.1" 404 2280
+WARNING 2024-07-16 23:37:42,329 log 4836 17188 Not Found: /media/media/IMG-20230920-WA0013.jpg
+WARNING 2024-07-16 23:37:42,329 basehttp 4836 1640 "GET /media/hw_2app/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-03_223209.png HTTP/1.1" 404 2415
+WARNING 2024-07-16 23:37:42,329 basehttp 4836 10628 "GET /media/media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-10_162740.png HTTP/1.1" 404 2409
+WARNING 2024-07-16 23:37:42,329 basehttp 4836 17188 "GET /media/media/IMG-20230920-WA0013.jpg HTTP/1.1" 404 2289
+WARNING 2024-07-16 23:37:42,345 log 4836 18404 Not Found: /media/Снимок_экрана_2024-03-10_171830.png
+WARNING 2024-07-16 23:37:42,344 log 4836 9836 Not Found: /media/Снимок_экрана_2024-03-03_213226.png
+WARNING 2024-07-16 23:37:42,345 basehttp 4836 18404 "GET /media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-10_171830.png HTTP/1.1" 404 2391
+WARNING 2024-07-16 23:37:42,345 basehttp 4836 9836 "GET /media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-03_213226.png HTTP/1.1" 404 2391
+INFO 2024-07-16 23:37:48,851 basehttp 4836 9836 "GET /shop/add_product/ HTTP/1.1" 200 1513
+INFO 2024-07-16 23:37:51,516 basehttp 4836 9836 "GET /shop/add_product/ HTTP/1.1" 200 1513
+INFO 2024-07-16 23:38:33,017 basehttp 4836 9836 "POST /shop/add_product/ HTTP/1.1" 302 0
+INFO 2024-07-16 23:38:33,025 basehttp 4836 9836 "GET /shop/upload/25 HTTP/1.1" 200 879
+INFO 2024-07-16 23:38:39,444 basehttp 4836 9836 "POST /shop/upload/25 HTTP/1.1" 302 0
+INFO 2024-07-16 23:38:39,459 basehttp 4836 9836 "GET /shop/display_product/ HTTP/1.1" 200 9674
+WARNING 2024-07-16 23:38:39,514 log 4836 18404 Not Found: /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg
+WARNING 2024-07-16 23:38:39,520 log 4836 18400 Not Found: /media/media/Снимок_экрана_2024-03-10_162740.png
+WARNING 2024-07-16 23:38:39,520 basehttp 4836 18404 "GET /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg HTTP/1.1" 404 2331
+WARNING 2024-07-16 23:38:39,526 basehttp 4836 18400 "GET /media/media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-10_162740.png HTTP/1.1" 404 2409
+WARNING 2024-07-16 23:38:39,530 log 4836 9836 Not Found: /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg
+WARNING 2024-07-16 23:38:39,531 basehttp 4836 9836 "GET /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg HTTP/1.1" 404 2331
+WARNING 2024-07-16 23:38:39,533 log 4836 1640 Not Found: /media/uploads/LostArk_sample.jpg
+WARNING 2024-07-16 23:38:39,543 log 4836 17188 Not Found: /media/media/IMG-20230920-WA0013.jpg
+WARNING 2024-07-16 23:38:39,545 log 4836 10628 Not Found: /media/hw_2app/Снимок_экрана_2024-03-03_223209.png
+WARNING 2024-07-16 23:38:39,545 basehttp 4836 1640 "GET /media/uploads/LostArk_sample.jpg HTTP/1.1" 404 2280
+WARNING 2024-07-16 23:38:39,545 basehttp 4836 10628 "GET /media/hw_2app/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-03_223209.png HTTP/1.1" 404 2415
+WARNING 2024-07-16 23:38:39,545 basehttp 4836 17188 "GET /media/media/IMG-20230920-WA0013.jpg HTTP/1.1" 404 2289
+WARNING 2024-07-16 23:38:39,562 log 4836 18400 Not Found: /media/Снимок_экрана_2024-03-10_171830.png
+WARNING 2024-07-16 23:38:39,562 log 4836 18404 Not Found: /media/Снимок_экрана_2024-03-03_213226.png
+WARNING 2024-07-16 23:38:39,562 log 4836 9836 Not Found: /media/images/2024/07/16/Снимок_экрана_2024-03-10_183200.png
+WARNING 2024-07-16 23:38:39,562 basehttp 4836 18400 "GET /media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-10_171830.png HTTP/1.1" 404 2391
+WARNING 2024-07-16 23:38:39,562 basehttp 4836 18404 "GET /media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-03_213226.png HTTP/1.1" 404 2391
+WARNING 2024-07-16 23:38:39,562 basehttp 4836 9836 "GET /media/images/2024/07/16/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-10_183200.png HTTP/1.1" 404 2445
+INFO 2024-07-16 23:39:18,289 autoreload 4836 4664 D:\GB\Django\Djangofirstproject\homework\homework\settings.py changed, reloading.
+INFO 2024-07-16 23:39:18,709 autoreload 13256 17864 Watching for file changes with StatReloader
+INFO 2024-07-16 23:39:21,824 basehttp 13256 12492 "GET /shop/display_product/ HTTP/1.1" 200 9712
+WARNING 2024-07-16 23:39:21,859 log 13256 6648 Not Found: /media/uploads/LostArk_sample.jpg
+WARNING 2024-07-16 23:39:21,859 log 13256 12492 Not Found: /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg
+WARNING 2024-07-16 23:39:21,859 log 13256 7064 Not Found: /media/media/Снимок_экрана_2024-03-10_162740.png
+WARNING 2024-07-16 23:39:21,859 log 13256 9932 Not Found: /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg
+WARNING 2024-07-16 23:39:21,859 log 13256 1416 Not Found: /media/hw_2app/Снимок_экрана_2024-03-03_223209.png
+WARNING 2024-07-16 23:39:21,873 log 13256 2120 Not Found: /media/media/IMG-20230920-WA0013.jpg
+WARNING 2024-07-16 23:39:21,873 basehttp 13256 12492 "GET /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg HTTP/1.1" 404 2331
+WARNING 2024-07-16 23:39:21,873 basehttp 13256 6648 "GET /media/uploads/LostArk_sample.jpg HTTP/1.1" 404 2280
+WARNING 2024-07-16 23:39:21,873 basehttp 13256 7064 "GET /media/media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-10_162740.png HTTP/1.1" 404 2409
+WARNING 2024-07-16 23:39:21,873 basehttp 13256 9932 "GET /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg HTTP/1.1" 404 2331
+WARNING 2024-07-16 23:39:21,874 basehttp 13256 1416 "GET /media/hw_2app/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-03_223209.png HTTP/1.1" 404 2415
+WARNING 2024-07-16 23:39:21,874 basehttp 13256 2120 "GET /media/media/IMG-20230920-WA0013.jpg HTTP/1.1" 404 2289
+WARNING 2024-07-16 23:39:21,882 log 13256 2120 Not Found: /media/Снимок_экрана_2024-03-10_171830.png
+WARNING 2024-07-16 23:39:21,882 log 13256 7064 Not Found: /media/Снимок_экрана_2024-03-03_213226.png
+WARNING 2024-07-16 23:39:21,883 log 13256 1416 Not Found: /media/images/2024/07/16/Снимок_экрана_2024-03-10_183200.png
+WARNING 2024-07-16 23:39:21,883 basehttp 13256 2120 "GET /media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-10_171830.png HTTP/1.1" 404 2391
+WARNING 2024-07-16 23:39:21,883 basehttp 13256 7064 "GET /media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-03_213226.png HTTP/1.1" 404 2391
+WARNING 2024-07-16 23:39:21,883 basehttp 13256 1416 "GET /media/images/2024/07/16/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-10_183200.png HTTP/1.1" 404 2445
+INFO 2024-07-16 23:46:08,972 basehttp 13256 1640 "GET /shop/display_product/ HTTP/1.1" 200 9325
+WARNING 2024-07-16 23:46:08,989 log 13256 1640 Not Found: /shop/homework/media/LostArk_sample.jpg
+WARNING 2024-07-16 23:46:08,989 basehttp 13256 1640 "GET /shop/homework/media/LostArk_sample.jpg HTTP/1.1" 404 3538
+INFO 2024-07-16 23:46:11,793 basehttp 13256 1640 "GET /shop/display_product/ HTTP/1.1" 200 9325
+WARNING 2024-07-16 23:46:11,815 log 13256 1640 Not Found: /shop/homework/media/LostArk_sample.jpg
+WARNING 2024-07-16 23:46:11,815 basehttp 13256 1640 "GET /shop/homework/media/LostArk_sample.jpg HTTP/1.1" 404 3538
+INFO 2024-07-16 23:46:57,682 basehttp 13256 1640 "GET /shop/display_product/ HTTP/1.1" 200 9316
+WARNING 2024-07-16 23:46:57,698 log 13256 1640 Not Found: /shop/display_product/homework/media/LostArk_sample.jpg
+WARNING 2024-07-16 23:46:57,698 basehttp 13256 1640 "GET /shop/display_product/homework/media/LostArk_sample.jpg HTTP/1.1" 404 3586
+INFO 2024-07-16 23:48:06,128 basehttp 13256 1640 "GET /shop/display_product/ HTTP/1.1" 200 9163
+WARNING 2024-07-16 23:48:06,144 log 13256 1640 Not Found: /shop/display_product/LostArk_sample.jpg
+WARNING 2024-07-16 23:48:06,144 basehttp 13256 1640 "GET /shop/display_product/LostArk_sample.jpg HTTP/1.1" 404 3541
+INFO 2024-07-16 23:48:08,691 basehttp 13256 1640 "GET /shop/display_product/ HTTP/1.1" 200 9163
+WARNING 2024-07-16 23:48:08,691 log 13256 1640 Not Found: /shop/display_product/LostArk_sample.jpg
+WARNING 2024-07-16 23:48:08,691 basehttp 13256 1640 "GET /shop/display_product/LostArk_sample.jpg HTTP/1.1" 404 3541
+INFO 2024-07-16 23:49:51,604 basehttp 13256 1640 "GET /shop/display_product/ HTTP/1.1" 200 8569
+WARNING 2024-07-16 23:49:51,621 log 13256 1640 Not Found: /shop/display_product/LostArk_sample.jpg
+WARNING 2024-07-16 23:49:51,621 basehttp 13256 1640 "GET /shop/display_product/LostArk_sample.jpg HTTP/1.1" 404 3541
+INFO 2024-07-17 00:05:35,832 basehttp 13256 17892 "GET /shop/display_product/ HTTP/1.1" 200 9712
+WARNING 2024-07-17 00:05:35,856 log 13256 17892 Not Found: /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg
+WARNING 2024-07-17 00:05:35,856 log 13256 9040 Not Found: /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg
+WARNING 2024-07-17 00:05:35,856 log 13256 20324 Not Found: /media/hw_2app/Снимок_экрана_2024-03-03_223209.png
+WARNING 2024-07-17 00:05:35,856 log 13256 18176 Not Found: /media/media/IMG-20230920-WA0013.jpg
+WARNING 2024-07-17 00:05:35,856 basehttp 13256 17892 "GET /media/media/photo_2024-06-18_12-34-37_iGn2XUn.jpg HTTP/1.1" 404 2331
+WARNING 2024-07-17 00:05:35,856 log 13256 12880 Not Found: /media/media/Снимок_экрана_2024-03-10_162740.png
+WARNING 2024-07-17 00:05:35,856 basehttp 13256 20324 "GET /media/hw_2app/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-03_223209.png HTTP/1.1" 404 2415
+WARNING 2024-07-17 00:05:35,856 basehttp 13256 9040 "GET /media/media/photo_2024-06-18_12-34-37_ZP5RoH3.jpg HTTP/1.1" 404 2331
+WARNING 2024-07-17 00:05:35,856 basehttp 13256 18176 "GET /media/media/IMG-20230920-WA0013.jpg HTTP/1.1" 404 2289
+WARNING 2024-07-17 00:05:35,856 log 13256 8580 Not Found: /media/uploads/LostArk_sample.jpg
+WARNING 2024-07-17 00:05:35,856 basehttp 13256 12880 "GET /media/media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-10_162740.png HTTP/1.1" 404 2409
+WARNING 2024-07-17 00:05:35,856 basehttp 13256 8580 "GET /media/uploads/LostArk_sample.jpg HTTP/1.1" 404 2280
+WARNING 2024-07-17 00:05:35,856 log 13256 17892 Not Found: /media/Снимок_экрана_2024-03-03_213226.png
+WARNING 2024-07-17 00:05:35,856 basehttp 13256 17892 "GET /media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-03_213226.png HTTP/1.1" 404 2391
+WARNING 2024-07-17 00:05:35,873 log 13256 12880 Not Found: /media/Снимок_экрана_2024-03-10_171830.png
+WARNING 2024-07-17 00:05:35,873 log 13256 20324 Not Found: /media/images/2024/07/16/Снимок_экрана_2024-03-10_183200.png
+WARNING 2024-07-17 00:05:35,874 basehttp 13256 12880 "GET /media/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-10_171830.png HTTP/1.1" 404 2391
+WARNING 2024-07-17 00:05:35,874 basehttp 13256 20324 "GET /media/images/2024/07/16/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2024-03-10_183200.png HTTP/1.1" 404 2445

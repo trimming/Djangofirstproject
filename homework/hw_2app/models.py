@@ -1,6 +1,8 @@
 from django.db import models
 
 
+
+
 # Create your models here.
 class Client(models.Model):
     name = models.CharField(max_length=100)
@@ -29,5 +31,5 @@ class Order(models.Model):
 
 
 class Image(models.Model):
-    image = models.ImageField(upload_to='hw_2app/', default=None)
+    image = models.ImageField(upload_to='images/%Y/%m/%d', default=None)
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='image')
