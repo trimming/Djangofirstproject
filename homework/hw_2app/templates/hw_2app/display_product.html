@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ title }} {% endblock%}
+
+{% block content %}
+
+{% for product in products %}
+<div class="col-md-4">
+    <h3>Наименование товара: {{ product.name }}</h3>
+    <p>Описание: {{ product.desc }}</p>
+    <p>Цена {{ product.price }}руб. <span>{{ product.quantity }}</span></p>
+    <p>Дата последнего изменения: {{ product.add_date }}</p>
+    {% for item in images %}
+        {% if product.id == item.product_id %}
+            <img src="{{ item.image.url }}" class="img-responsive" style="width: 100%; float: left; margin-right: 10px;" />
+        {% endif %}
+    {% endfor %}
+</div>
+{% endfor %}
+
+{% endblock%}

@@ -1,6 +1,8 @@
 from django.db import models
 
 
+
+
 # Create your models here.
 class Client(models.Model):
     name = models.CharField(max_length=100)
@@ -17,9 +19,17 @@ class Product(models.Model):
     quantity = models.IntegerField()
     add_date = models.DateTimeField()
 
+    def __str__(self):
+        return f'"{self.name}"'
+
 
 class Order(models.Model):
     client = models.ForeignKey(Client, on_delete=models.CASCADE)
     product = models.ManyToManyField(Product)
     total_price = models.DecimalField(max_digits=15, decimal_places=2)
     order_date = models.DateTimeField(auto_now_add=True)
+
+
+class Image(models.Model):
+    image = models.ImageField(upload_to='images/%Y/%m/%d', default=None)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='image')
