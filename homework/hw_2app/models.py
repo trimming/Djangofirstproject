@@ -29,5 +29,5 @@ class Order(models.Model):
 
 
 class Image(models.Model):
-    image = models.ImageField(upload_to='media', default=None)
+    image = models.ImageField(upload_to='hw_2app/', default=None)
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='image')

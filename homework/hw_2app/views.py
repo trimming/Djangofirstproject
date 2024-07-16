@@ -112,12 +112,11 @@ def add_product(request):
 
 
 def display_product(request):
-    if request.method == 'GET':
-        products = Product.objects.all()
-        images = Image.objects.all()
-        context = {
-            'title': 'Все товары',
-            'products': products,
-            'images': images,
-        }
-        return render(request, 'hw_2app/display_product.html', context)
+    products = Product.objects.all()
+    images = Image.objects.all()
+    context = {
+        'title': 'Все товары',
+        'products': products,
+        'images': images,
+    }
+    return render(request, 'hw_2app/display_product.html', context)
